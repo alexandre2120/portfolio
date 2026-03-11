@@ -1,6 +1,8 @@
 import { type Metadata } from "next"
 import { Bricolage_Grotesque, Newsreader, JetBrains_Mono } from "next/font/google"
 
+import { Analytics } from "@vercel/analytics/next"
+
 import { Providers } from "@/app/providers"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
@@ -67,6 +69,7 @@ export default function RootLayout({
           <main className="flex-auto">{children}</main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
