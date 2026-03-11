@@ -56,6 +56,23 @@ export function Hero() {
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-20">
           {/* Text content */}
           <div className="max-w-2xl lg:flex-1">
+            {/* Mobile profile photo — compact circular avatar */}
+            <div className="mb-6 flex items-center gap-4 lg:hidden">
+              <div className="relative">
+                <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-[var(--color-accent)] to-teal-600 opacity-30 blur-[2px]" />
+                <div className="relative h-16 w-16 overflow-hidden rounded-full bg-zinc-100 ring-1 ring-[var(--color-border)] sm:h-20 sm:w-20 dark:bg-zinc-800 dark:ring-[var(--color-border-dark)]">
+                  <Image
+                    src="/profile.png"
+                    alt="Alexandre Jaques"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
             {/* Greeting — mono accent */}
             <p className="font-[family-name:var(--font-mono)] text-sm tracking-wider text-[var(--color-accent)] dark:text-[var(--color-accent-light)]">
               {t("hero.greeting")}
