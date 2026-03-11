@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Container } from "@/components/ui/Container"
 import { useTranslation } from "@/lib/i18n"
 
@@ -7,6 +8,7 @@ type Project = {
   name: string
   description: { en: string; pt: string }
   tags: string[]
+  image: string
   href?: string
 }
 
@@ -18,6 +20,7 @@ const projects: Project[] = [
       pt: "Plataforma marketplace full-stack conectando prestadores de serviços a clientes em múltiplas categorias, de automotivo e beleza a construção e educação. Construída com frontend Next.js, backend Fastify API e app mobile Flutter. Com suporte multilíngue, correspondência de serviços em tempo real e fluxos de onboarding personalizados.",
     },
     tags: ["Next.js", "Fastify", "Flutter", "PostgreSQL"],
+    image: "/images/projects/bunniemonki.png",
     href: "https://bunniemonki.com",
   },
   {
@@ -27,6 +30,7 @@ const projects: Project[] = [
       pt: "Plataforma de agendamento e automação WhatsApp com assistente de IA. Responde aos clientes 24/7, gerencia agendamentos, confirmações e reagendamentos, tudo sem intervenção manual. Projetada para salões de beleza, clínicas e empresas de serviços que perdem clientes por não responder o WhatsApp rápido o suficiente.",
     },
     tags: ["Next.js", "AI", "WhatsApp API", "Automation"],
+    image: "/images/projects/jippfy.png",
     href: "https://www.jippfy.pt",
   },
   {
@@ -36,6 +40,7 @@ const projects: Project[] = [
       pt: "Website profissional para negócio de massagens terapêuticas e tratamentos estéticos ao domicílio em Lisboa e Setúbal. Design elegante com tons quentes, suporte trilíngue (PT/EN/ES), agendamento de consulta gratuita e vitrine de serviços com resultados antes/depois.",
     },
     tags: ["Next.js", "Tailwind CSS", "i18n", "SEO"],
+    image: "/images/projects/theskinaesthetic.png",
     href: "https://www.theskinaesthetic.pt",
   },
   {
@@ -45,6 +50,7 @@ const projects: Project[] = [
       pt: "Painel de automação Next.js personalizado que permite importação em massa de conversas, funcionalidade não suportada nativamente pela plataforma ChatGuru. Identifiquei uma dor real dos clientes que precisavam migrar milhares de conversas, e construí esta ferramenta para automatizar todo o processo via API do ChatGuru.",
     },
     tags: ["Next.js", "ChatGuru API", "Automation", "Vercel"],
+    image: "/images/projects/chatguru-tool.png",
     href: "https://cgtools.vercel.app",
   },
   {
@@ -54,6 +60,7 @@ const projects: Project[] = [
       pt: "Website da agência digital apresentando serviços de desenvolvimento web, automação e integrações. Design moderno com portfólio de projetos, depoimentos e ofertas de serviços, de websites e apps mobile a automações inteligentes e landing pages.",
     },
     tags: ["Next.js", "Branding", "Integrations"],
+    image: "/images/projects/agency.png",
     href: "https://agency.bunniemonki.com",
   },
 ]
@@ -95,60 +102,91 @@ export function Projects() {
             </div>
           </div>
 
-          {/* Project cards — vertical stack */}
-          <div className="space-y-6 lg:col-span-8">
+          {/* Project cards */}
+          <div className="space-y-8 lg:col-span-8">
             {projects.map((project, index) => (
               <div
                 key={project.name}
-                className="group relative rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] p-6 transition hover:border-[var(--color-accent)]/30 hover:shadow-lg sm:p-8 dark:border-[var(--color-border-dark)] dark:bg-[var(--color-surface-elevated-dark)] dark:hover:border-[var(--color-accent)]/30"
+                className="group relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] transition hover:border-[var(--color-accent)]/30 hover:shadow-lg dark:border-[var(--color-border-dark)] dark:bg-[var(--color-surface-elevated-dark)] dark:hover:border-[var(--color-accent)]/30"
               >
-                {/* Index number */}
-                <span className="absolute top-6 right-6 font-[family-name:var(--font-mono)] text-xs text-zinc-300 sm:top-8 sm:right-8 dark:text-zinc-700">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-
-                <h3 className="font-[family-name:var(--font-display)] text-lg font-bold text-zinc-900 dark:text-zinc-50">
+                {/* Screenshot preview */}
+                <div className="relative aspect-video overflow-hidden border-b border-[var(--color-border)] dark:border-[var(--color-border-dark)]">
                   {project.href ? (
                     <a
                       href={project.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group/link inline-flex items-center gap-2"
+                      className="block"
                     >
-                      {project.name}
-                      <ArrowIcon className="h-4 w-4 text-zinc-400 transition group-hover/link:text-[var(--color-accent)]" />
+                      <Image
+                        src={project.image}
+                        alt={`${project.name} screenshot`}
+                        fill
+                        className="object-cover object-top transition duration-500 group-hover:scale-[1.02]"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 66vw, 800px"
+                      />
                     </a>
                   ) : (
-                    project.name
+                    <Image
+                      src={project.image}
+                      alt={`${project.name} screenshot`}
+                      fill
+                      className="object-cover object-top"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 66vw, 800px"
+                    />
                   )}
-                </h3>
-
-                <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                  {project.description[locale]}
-                </p>
-
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-md bg-zinc-100 px-2 py-0.5 font-[family-name:var(--font-mono)] text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
-                    >
-                      {tag}
-                    </span>
-                  ))}
                 </div>
 
-                {project.href && (
-                  <a
-                    href={project.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1.5 font-[family-name:var(--font-display)] text-sm font-medium text-[var(--color-accent)] transition hover:text-[var(--color-accent-light)]"
-                  >
-                    {t("projects.viewProject")}
-                    <ArrowIcon className="h-3.5 w-3.5" />
-                  </a>
-                )}
+                {/* Card content */}
+                <div className="relative p-6 sm:p-8">
+                  {/* Index number */}
+                  <span className="absolute top-6 right-6 font-[family-name:var(--font-mono)] text-xs text-zinc-300 sm:top-8 sm:right-8 dark:text-zinc-700">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  <h3 className="font-[family-name:var(--font-display)] text-lg font-bold text-zinc-900 dark:text-zinc-50">
+                    {project.href ? (
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/link inline-flex items-center gap-2"
+                      >
+                        {project.name}
+                        <ArrowIcon className="h-4 w-4 text-zinc-400 transition group-hover/link:text-[var(--color-accent)]" />
+                      </a>
+                    ) : (
+                      project.name
+                    )}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    {project.description[locale]}
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-md bg-zinc-100 px-2 py-0.5 font-[family-name:var(--font-mono)] text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {project.href && (
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-1.5 font-[family-name:var(--font-display)] text-sm font-medium text-[var(--color-accent)] transition hover:text-[var(--color-accent-light)]"
+                    >
+                      {t("projects.viewProject")}
+                      <ArrowIcon className="h-3.5 w-3.5" />
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
