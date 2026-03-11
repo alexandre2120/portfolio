@@ -4,6 +4,7 @@
     "skills": "Skills",
     "experience": "Experience",
     "projects": "Projects",
+    "testimonials": "Testimonials",
     "certifications": "Certifications",
     "contact": "Contact",
     "articles": "Articles"
@@ -81,6 +82,10 @@
       "period": "2019 — 2020",
       "description": "First CS hire. Handled customer onboarding, support, and success workflows from the ground up."
     }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What colleagues and leaders say about working with me."
   },
   "certifications": {
     "title": "Certifications",

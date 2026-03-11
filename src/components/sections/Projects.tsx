@@ -62,7 +62,7 @@ export function Projects() {
           <div className="lg:col-span-4">
             <div className="sticky top-24">
               <p className="font-[family-name:var(--font-mono)] text-xs tracking-widest text-[var(--color-accent)] uppercase dark:text-[var(--color-accent-light)]">
-                05
+                06
               </p>
               <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
                 {t("projects.title")}

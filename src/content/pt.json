@@ -4,6 +4,7 @@
     "skills": "Habilidades",
     "experience": "Experiência",
     "projects": "Projetos",
+    "testimonials": "Recomendações",
     "certifications": "Certificações",
     "contact": "Contato",
     "articles": "Artigos"
@@ -81,6 +82,10 @@
       "period": "2019 — 2020",
       "description": "Primeiro contratado de CS. Gerenciei onboarding, suporte e workflows de sucesso do cliente desde o zero."
     }
+  },
+  "testimonials": {
+    "title": "Recomendações",
+    "subtitle": "O que colegas e líderes dizem sobre trabalhar comigo."
   },
   "certifications": {
     "title": "Certificações",
