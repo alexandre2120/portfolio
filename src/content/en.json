@@ -43,7 +43,7 @@
     "integraninja": {
       "role": "CEO & Founder",
       "company": "IntegraNinja",
-      "period": "Jul 2021 — Jan 2025",
+      "period": "Jul 2021 - Jan 2025",
       "description": "Founded and led IntegraNinja, a service company specialized in building automation solutions and API integrations for clients across multiple industries.",
       "highlights": [
         "Designed, implemented, and maintained automation workflows, custom integrations, and lightweight applications",
@@ -62,7 +62,7 @@
     "headOps": {
       "role": "Head of Operations",
       "company": "ChatGuru",
-      "period": "2020 — 2025",
+      "period": "2020 - 2025",
       "description": "Led cross-functional teams in process optimization, AI integration, and scaling operations for the SaaS platform.",
       "highlights": [
         "Managed CS, Support, and Operations teams through rapid company growth",
@@ -79,7 +79,7 @@
     "analystCS": {
       "role": "Customer Success Analyst",
       "company": "ChatGuru",
-      "period": "2019 — 2020",
+      "period": "2019 - 2020",
       "description": "First CS hire. Handled customer onboarding, support, and success workflows from the ground up."
     }
   },

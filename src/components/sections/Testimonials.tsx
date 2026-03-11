@@ -42,8 +42,8 @@ const testimonials: Testimonial[] = [
       pt: "Colega sênior",
     },
     quote: {
-      en: "Alex was one of the first people at ChatGuru and played a key role in our growth. He learns fast, adapts quickly, and consistently delivered what we needed, even in the most demanding moments. Besides being a strong professional, he's also a genuinely good person — reliable, easy to work with, and very attentive to details.",
-      pt: "Alex foi uma das primeiras pessoas no ChatGuru e desempenhou um papel fundamental no nosso crescimento. Ele aprende rápido, se adapta rapidamente e entregou consistentemente o que precisávamos, mesmo nos momentos mais exigentes. Além de ser um profissional forte, ele também é uma pessoa genuinamente boa — confiável, fácil de trabalhar e muito atento aos detalhes.",
+      en: "Alex was one of the first people at ChatGuru and played a key role in our growth. He learns fast, adapts quickly, and consistently delivered what we needed, even in the most demanding moments. Besides being a strong professional, he's also a genuinely good person, reliable, easy to work with, and very attentive to details.",
+      pt: "Alex foi uma das primeiras pessoas no ChatGuru e desempenhou um papel fundamental no nosso crescimento. Ele aprende rápido, se adapta rapidamente e entregou consistentemente o que precisávamos, mesmo nos momentos mais exigentes. Além de ser um profissional forte, ele também é uma pessoa genuinamente boa, confiável, fácil de trabalhar e muito atento aos detalhes.",
     },
   },
 ]

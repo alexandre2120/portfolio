@@ -14,8 +14,8 @@ const projects: Project[] = [
   {
     name: "BunnieMonki Marketplace",
     description: {
-      en: "Full-stack marketplace platform connecting service providers with customers across multiple categories — from automotive and beauty to construction and education. Built with Next.js frontend, Fastify API backend, and Flutter mobile app. Features multi-language support, real-time service matching, and custom onboarding flows.",
-      pt: "Plataforma marketplace full-stack conectando prestadores de serviços a clientes em múltiplas categorias — de automotivo e beleza a construção e educação. Construída com frontend Next.js, backend Fastify API e app mobile Flutter. Com suporte multilíngue, correspondência de serviços em tempo real e fluxos de onboarding personalizados.",
+      en: "Full-stack marketplace platform connecting service providers with customers across multiple categories, from automotive and beauty to construction and education. Built with Next.js frontend, Fastify API backend, and Flutter mobile app. Features multi-language support, real-time service matching, and custom onboarding flows.",
+      pt: "Plataforma marketplace full-stack conectando prestadores de serviços a clientes em múltiplas categorias, de automotivo e beleza a construção e educação. Construída com frontend Next.js, backend Fastify API e app mobile Flutter. Com suporte multilíngue, correspondência de serviços em tempo real e fluxos de onboarding personalizados.",
     },
     tags: ["Next.js", "Fastify", "Flutter", "PostgreSQL"],
     href: "https://bunniemonki.com",
@@ -23,8 +23,8 @@ const projects: Project[] = [
   {
     name: "JIPPfy",
     description: {
-      en: "WhatsApp scheduling and automation platform with AI-powered assistant. Responds to customers 24/7, handles appointment booking, confirmation, and rescheduling — all without manual intervention. Designed for beauty salons, clinics, and service businesses who lose customers by not answering WhatsApp fast enough.",
-      pt: "Plataforma de agendamento e automação WhatsApp com assistente de IA. Responde aos clientes 24/7, gerencia agendamentos, confirmações e reagendamentos — tudo sem intervenção manual. Projetada para salões de beleza, clínicas e empresas de serviços que perdem clientes por não responder o WhatsApp rápido o suficiente.",
+      en: "WhatsApp scheduling and automation platform with AI-powered assistant. Responds to customers 24/7, handles appointment booking, confirmation, and rescheduling, all without manual intervention. Designed for beauty salons, clinics, and service businesses who lose customers by not answering WhatsApp fast enough.",
+      pt: "Plataforma de agendamento e automação WhatsApp com assistente de IA. Responde aos clientes 24/7, gerencia agendamentos, confirmações e reagendamentos, tudo sem intervenção manual. Projetada para salões de beleza, clínicas e empresas de serviços que perdem clientes por não responder o WhatsApp rápido o suficiente.",
     },
     tags: ["Next.js", "AI", "WhatsApp API", "Automation"],
     href: "https://www.jippfy.pt",
@@ -41,8 +41,8 @@ const projects: Project[] = [
   {
     name: "ChatGuru Import Tool",
     description: {
-      en: "Custom Next.js automation panel that enables bulk chat importing — a feature not natively supported by the ChatGuru platform. Identified a real customer pain point where clients needed to migrate thousands of conversations, and built this tool to automate the entire process via the ChatGuru API.",
-      pt: "Painel de automação Next.js personalizado que permite importação em massa de conversas — funcionalidade não suportada nativamente pela plataforma ChatGuru. Identifiquei uma dor real dos clientes que precisavam migrar milhares de conversas, e construí esta ferramenta para automatizar todo o processo via API do ChatGuru.",
+      en: "Custom Next.js automation panel that enables bulk chat importing, a feature not natively supported by the ChatGuru platform. Identified a real customer pain point where clients needed to migrate thousands of conversations, and built this tool to automate the entire process via the ChatGuru API.",
+      pt: "Painel de automação Next.js personalizado que permite importação em massa de conversas, funcionalidade não suportada nativamente pela plataforma ChatGuru. Identifiquei uma dor real dos clientes que precisavam migrar milhares de conversas, e construí esta ferramenta para automatizar todo o processo via API do ChatGuru.",
     },
     tags: ["Next.js", "ChatGuru API", "Automation", "Vercel"],
     href: "https://cgtools.vercel.app",
@@ -50,8 +50,8 @@ const projects: Project[] = [
   {
     name: "BunnieMonki Agency",
     description: {
-      en: "Digital agency website showcasing web development, automation, and integration services. Features a modern design with project portfolio, testimonials, and service offerings — from websites and mobile apps to smart automations and landing pages.",
-      pt: "Website da agência digital apresentando serviços de desenvolvimento web, automação e integrações. Design moderno com portfólio de projetos, depoimentos e ofertas de serviços — de websites e apps mobile a automações inteligentes e landing pages.",
+      en: "Digital agency website showcasing web development, automation, and integration services. Features a modern design with project portfolio, testimonials, and service offerings, from websites and mobile apps to smart automations and landing pages.",
+      pt: "Website da agência digital apresentando serviços de desenvolvimento web, automação e integrações. Design moderno com portfólio de projetos, depoimentos e ofertas de serviços, de websites e apps mobile a automações inteligentes e landing pages.",
     },
     tags: ["Next.js", "Branding", "Integrations"],
     href: "https://agency.bunniemonki.com",
