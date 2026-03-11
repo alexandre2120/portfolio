@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "certifications": "Certificações",
+    "contact": "Contato",
+    "articles": "Artigos"
+  },
+  "hero": {
+    "greeting": "Olá, sou Alexandre",
+    "title": "Alexandre Jaques",
+    "roles": [
+      "Fundador & Desenvolvedor Full Stack",
+      "Engenheiro Sênior de Integração & Automação"
+    ],
+    "subtitle": "Construindo soluções escaláveis com JavaScript, React e Next.js. Combinando 6+ anos de liderança em Operações com desenvolvimento full-stack e engenharia de IA.",
+    "cta": "Entre em contato"
+  },
+  "about": {
+    "title": "Sobre",
+    "paragraphs": [
+      "Desenvolvedor Full-Stack baseado em Lisboa, Portugal, com uma formação única combinando 6+ anos de liderança em Operações em uma startup SaaS com engenharia de software prática.",
+      "Especializo-me em JavaScript, React e Next.js, com profunda experiência em codificação com IA, integração de APIs RESTful e automação de workflows usando n8n/Make e scripts Python.",
+      "Atualmente estudando Engenharia de IA e Machine Learning, focado em aproveitar expertise técnica e planejamento estratégico para impulsionar inovação e soluções escaláveis."
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "categories": {
+      "development": "Desenvolvimento",
+      "ai": "IA & Automação",
+      "infrastructure": "Infraestrutura",
+      "leadership": "Liderança"
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "subtitle": "Minha jornada profissional entre startups e automação.",
+    "present": "Presente",
+    "integraninja": {
+      "role": "CEO & Fundador",
+      "company": "IntegraNinja",
+      "period": "Jul 2021 — Jan 2025",
+      "description": "Fundei e liderei a IntegraNinja, uma empresa de serviços especializada em soluções de automação e integrações de APIs para clientes de múltiplos setores.",
+      "highlights": [
+        "Projetei, implementei e mantive workflows de automação, integrações customizadas e aplicações leves",
+        "Entreguei projetos de automação para clientes nos setores jurídico, varejo, saúde, imobiliário e serviços profissionais",
+        "Construí soluções flexíveis e escaláveis usando n8n, Make, Next.js e microsserviços Python",
+        "Reduzi custos operacionais e trabalho manual através de sincronização de dados e automação de workflows",
+        "Consultoria: mapeamento de processos, identificação de gargalos e design de estratégias de automação"
+      ]
+    },
+    "director": {
+      "role": "Diretor",
+      "company": "ChatGuru",
+      "period": "2025",
+      "description": "Liderança estratégica impulsionando transformação digital e excelência operacional em toda a organização."
+    },
+    "headOps": {
+      "role": "Head de Operações",
+      "company": "ChatGuru",
+      "period": "2020 — 2025",
+      "description": "Liderança de equipes multifuncionais em otimização de processos, integração de IA e escalonamento de operações da plataforma SaaS.",
+      "highlights": [
+        "Gerenciei equipes de CS, Suporte e Operações durante o rápido crescimento da empresa",
+        "Implementei workflows de automação que reduziram processos manuais em 60%+",
+        "Liderei a integração de ferramentas de IA nas operações internas e produtos voltados ao cliente"
+      ]
+    },
+    "managerCS": {
+      "role": "Gerente de Customer Success",
+      "company": "ChatGuru",
+      "period": "2020",
+      "description": "Construí e gerenciei a equipe de Customer Success, estabelecendo processos de onboarding, retenção e expansão."
+    },
+    "analystCS": {
+      "role": "Analista de Customer Success",
+      "company": "ChatGuru",
+      "period": "2019 — 2020",
+      "description": "Primeiro contratado de CS. Gerenciei onboarding, suporte e workflows de sucesso do cliente desde o zero."
+    }
+  },
+  "certifications": {
+    "title": "Certificações",
+    "expires": "Expira"
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Uma seleção de projetos em que trabalhei.",
+    "viewProject": "Ver projeto"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos trabalhar juntos. Sinta-se à vontade para entrar em contato.",
+    "location": "Lisboa, Portugal",
+    "email": "Email",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}

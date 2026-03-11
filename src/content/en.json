@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "articles": "Articles"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Alexandre",
+    "title": "Alexandre Jaques",
+    "roles": [
+      "Founder & Full Stack Developer",
+      "Senior Integration & Automation Engineer"
+    ],
+    "subtitle": "Building scalable solutions with JavaScript, React, and Next.js. Combining 6+ years of Operations leadership with full-stack development and AI engineering.",
+    "cta": "Get in touch"
+  },
+  "about": {
+    "title": "About",
+    "paragraphs": [
+      "Full-Stack Developer based in Lisbon, Portugal, with a unique background combining 6+ years of Operations leadership at a SaaS startup with hands-on software engineering.",
+      "I specialize in JavaScript, React, and Next.js, with deep experience in AI coding, RESTful APIs integration, and workflow automation using n8n/Make and Python scripting.",
+      "Currently studying AI & Machine Learning Engineering, focused on leveraging technical expertise and strategic planning to drive innovation and scalable solutions."
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "development": "Development",
+      "ai": "AI & Automation",
+      "infrastructure": "Infrastructure",
+      "leadership": "Leadership"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey across startups and automation.",
+    "present": "Present",
+    "integraninja": {
+      "role": "CEO & Founder",
+      "company": "IntegraNinja",
+      "period": "Jul 2021 — Jan 2025",
+      "description": "Founded and led IntegraNinja, a service company specialized in building automation solutions and API integrations for clients across multiple industries.",
+      "highlights": [
+        "Designed, implemented, and maintained automation workflows, custom integrations, and lightweight applications",
+        "Delivered automation projects for clients in legal, retail, healthcare, real estate, and professional services",
+        "Built flexible, scalable solutions using n8n, Make, Next.js, and Python microservices",
+        "Reduced operational costs and manual workload through data synchronization and workflow automation",
+        "Consulting: mapping processes, identifying bottlenecks, and designing automation strategies"
+      ]
+    },
+    "director": {
+      "role": "Director",
+      "company": "ChatGuru",
+      "period": "2025",
+      "description": "Strategic leadership driving digital transformation and operational excellence across the organization."
+    },
+    "headOps": {
+      "role": "Head of Operations",
+      "company": "ChatGuru",
+      "period": "2020 — 2025",
+      "description": "Led cross-functional teams in process optimization, AI integration, and scaling operations for the SaaS platform.",
+      "highlights": [
+        "Managed CS, Support, and Operations teams through rapid company growth",
+        "Implemented automation workflows that reduced manual processes by 60%+",
+        "Led integration of AI tools into internal operations and customer-facing products"
+      ]
+    },
+    "managerCS": {
+      "role": "Manager of Customer Success",
+      "company": "ChatGuru",
+      "period": "2020",
+      "description": "Built and managed the Customer Success team, establishing processes for onboarding, retention, and expansion."
+    },
+    "analystCS": {
+      "role": "Customer Success Analyst",
+      "company": "ChatGuru",
+      "period": "2019 — 2020",
+      "description": "First CS hire. Handled customer onboarding, support, and success workflows from the ground up."
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "expires": "Expires"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of projects I've worked on.",
+    "viewProject": "View project"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's work together. Feel free to reach out.",
+    "location": "Lisbon, Portugal",
+    "email": "Email",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
