@@ -114,12 +114,12 @@ export function Hero() {
               </a>
               <div className="flex items-center">
                 <SocialLink
-                  href="https://github.com/alexandrejaques"
+                  href="https://github.com/alexandre2120"
                   icon={GitHubIcon}
                   label="GitHub"
                 />
                 <SocialLink
-                  href="https://linkedin.com/in/alexandrejaques"
+                  href="https://www.linkedin.com/in/alexandre-jaques-b66249135/"
                   icon={LinkedInIcon}
                   label="LinkedIn"
                 />

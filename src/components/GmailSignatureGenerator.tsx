@@ -35,10 +35,10 @@ function getSignatureHTML(photoUrl: string): string {
             <a href="mailto:alexandrjaques@gmail.com" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">Email</a>
           </td>
           <td style="padding:0 10px;border-left:1px solid #d4d4d8;">
-            <a href="https://github.com/alexandrejaques" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">GitHub</a>
+            <a href="https://github.com/alexandre2120" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">GitHub</a>
           </td>
           <td style="padding:0 10px;border-left:1px solid #d4d4d8;">
-            <a href="https://linkedin.com/in/alexandrejaques" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/alexandre-jaques-b66249135/" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">LinkedIn</a>
           </td>
         </tr>
       </table>
