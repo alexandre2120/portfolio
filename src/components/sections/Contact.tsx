@@ -95,21 +95,21 @@ export function Contact() {
               value="alexandrjaques@gmail.com"
             />
             <ContactItem
-              href="https://github.com/alexandrejaques"
+              href="https://github.com/alexandre2120"
               icon={
                 <GitHubIcon className="h-5 w-5 fill-[var(--color-accent)]" />
               }
               label={t("contact.github")}
-              value="github.com/alexandrejaques"
+              value="github.com/alexandre2120"
               external
             />
             <ContactItem
-              href="https://linkedin.com/in/alexandrejaques"
+              href="https://www.linkedin.com/in/alexandre-jaques-b66249135/"
               icon={
                 <LinkedInIcon className="h-5 w-5 fill-[var(--color-accent)]" />
               }
               label="LinkedIn"
-              value="linkedin.com/in/alexandrejaques"
+              value="linkedin.com/in/alexandre-jaques"
               external
             />
             <ContactItem
