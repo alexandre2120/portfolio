@@ -1,5 +1,5 @@
 import { type Metadata } from "next"
-import { Bricolage_Grotesque, Newsreader, JetBrains_Mono } from "next/font/google"
+import { Fraunces, Inter, JetBrains_Mono } from "next/font/google"
 
 import { Analytics } from "@vercel/analytics/next"
 
@@ -9,19 +9,19 @@ import { Footer } from "@/components/layout/Footer"
 
 import "@/styles/tailwind.css"
 
-const bricolage = Bricolage_Grotesque({
+const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  weight: ["300", "400", "500", "600", "700"],
 })
 
-const newsreader = Newsreader({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-sans",
   display: "swap",
-  style: ["normal", "italic"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 })
 
 const jetbrainsMono = JetBrains_Mono({
@@ -60,13 +60,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`h-full antialiased ${bricolage.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}
+      className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="noise-bg flex h-full flex-col bg-[var(--color-surface)] font-[family-name:var(--font-body)] text-zinc-700 dark:bg-[var(--color-surface-dark)] dark:text-zinc-300">
+      <body>
         <Providers>
+          <div className="grain" />
           <Header />
-          <main className="flex-auto">{children}</main>
+          <main>{children}</main>
           <Footer />
         </Providers>
         <Analytics />

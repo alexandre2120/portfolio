@@ -1,47 +1,93 @@
-"use client"
-
-import { Container } from "@/components/ui/Container"
-import { useTranslation } from "@/lib/i18n"
+import Image from "next/image"
 
 export function About() {
-  const { t, tArray } = useTranslation()
-
-  const paragraphs = tArray("about.paragraphs")
-
   return (
-    <section id="about" className="relative py-24 sm:py-32">
-      <Container>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
-          {/* Section label — editorial style */}
-          <div className="lg:col-span-4">
-            <div className="sticky top-24">
-              <p className="font-[family-name:var(--font-mono)] text-xs tracking-widest text-[var(--color-accent)] uppercase dark:text-[var(--color-accent-light)]">
-                01
-              </p>
-              <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
-                {t("about.title")}
-              </h2>
-              <div className="mt-4 h-px w-12 bg-[var(--color-accent)]" />
+    <section className="sec" id="about">
+      <div className="wrap">
+        <div className="sec-head">
+          <div className="num-col">
+            <div className="big">/01</div>
+            <div className="lab">About</div>
+          </div>
+          <div className="title-col">
+            <h2>
+              An engineer
+              <br />
+              who <span className="it">runs ops.</span>
+            </h2>
+          </div>
+          <div className="meta-col mono">
+            Section 01 / 05
+            <br />
+            Last updated · 04.05.26
+          </div>
+        </div>
+
+        <div className="about-grid">
+          <div className="about-portrait reveal">
+            <div className="frame">
+              <Image
+                src="/portrait-suit.jpg"
+                alt="Alexandre Jaques"
+                fill
+                sizes="(max-width: 900px) 100vw, 30vw"
+                style={{ objectFit: "cover" }}
+              />
+              <div className="corners">
+                <i />
+              </div>
+            </div>
+            <div className="tag">
+              <span>Alexandre Jaques · Lisbon</span>
+              <span>EST. 2019 · 6Y</span>
             </div>
           </div>
 
-          {/* Content — editorial serif paragraphs */}
-          <div className="space-y-6 lg:col-span-8">
-            {paragraphs.map((paragraph, index) => (
-              <p
-                key={index}
-                className={
-                  index === 0
-                    ? "text-lg leading-relaxed text-zinc-700 dark:text-zinc-300"
-                    : "text-base leading-relaxed text-zinc-600 dark:text-zinc-400"
-                }
-              >
-                {paragraph}
-              </p>
-            ))}
+          <div className="about-body reveal">
+            <p className="about-lede">
+              Six years at a SaaS startup taught me that <em>shipping</em> is
+              just the beginning. What compounds is the system around it.
+            </p>
+            <p className="about-p">
+              I&apos;m a Full-Stack Developer based in Lisbon with an unusual
+              combination: 6+ years of Operations leadership at ChatGuru,
+              founding IntegraNinja to design automation systems for clients in
+              legal, retail, healthcare, and real estate, and hands-on
+              engineering across the React/Next.js stack.
+            </p>
+            <p className="about-p">
+              Lately I&apos;ve been deep in AI Engineering (Claude Code, LLM
+              APIs, agentic workflows) and integrating them into the kind of
+              operational backbones I spent years optimizing by hand. Currently
+              studying AI &amp; Machine Learning Engineering, focused on
+              building scalable, useful systems.
+            </p>
+
+            <div className="about-stats">
+              <div className="stat">
+                <div className="v">
+                  6<sup>+</sup>
+                </div>
+                <div className="l">Years in SaaS</div>
+              </div>
+              <div className="stat">
+                <div className="v">
+                  60<sup>%</sup>
+                </div>
+                <div className="l">Manual work cut</div>
+              </div>
+              <div className="stat">
+                <div className="v">5</div>
+                <div className="l">Active products</div>
+              </div>
+              <div className="stat">
+                <div className="v">∞</div>
+                <div className="l">Workflows shipped</div>
+              </div>
+            </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   )
 }
