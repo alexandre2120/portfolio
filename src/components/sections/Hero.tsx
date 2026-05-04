@@ -1,161 +1,108 @@
-"use client"
-
 import Image from "next/image"
-import { Container } from "@/components/ui/Container"
-import { Typewriter } from "@/components/ui/typewriter"
-import { GitHubIcon, LinkedInIcon, InstagramIcon, MailIcon } from "@/components/icons/SocialIcons"
-import { useTranslation } from "@/lib/i18n"
-
-function SocialLink({
-  icon: Icon,
-  href,
-  label,
-}: {
-  icon: React.ComponentType<{ className?: string }>
-  href: string
-  label: string
-}) {
-  return (
-    <a
-      href={href}
-      aria-label={label}
-      className="group flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg transition hover:bg-zinc-100 dark:hover:bg-zinc-800"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Icon className="h-5 w-5 fill-zinc-500 transition group-hover:fill-[var(--color-accent)] dark:fill-zinc-400 dark:group-hover:fill-[var(--color-accent-light)]" />
-    </a>
-  )
-}
-
-function ArrowDownIcon(props: React.ComponentPropsWithoutRef<"svg">) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M8 1v12M3 9l5 5 5-5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
 
 export function Hero() {
-  const { t, tArray, locale } = useTranslation()
-
-  const roles = tArray("hero.roles")
-
   return (
-    <section id="hero" className="hero-gradient relative overflow-hidden">
-      {/* Dot grid pattern overlay */}
-      <div className="dot-grid absolute inset-0" />
+    <>
+      <section className="hero" id="top">
+        <div className="wrap">
+          <div className="hero-meta mono">
+            <div className="col">
+              <span>Index/01</span>
+              <span>Portfolio &mdash; 2026</span>
+            </div>
+            <div className="col" style={{ textAlign: "center" }}>
+              <span>Lat 38.7223° N</span>
+              <span>Lon 9.1393° W</span>
+            </div>
+            <div className="col" style={{ textAlign: "right" }}>
+              <span>Status</span>
+              <span style={{ color: "#22c55e" }}>Available for work</span>
+            </div>
+          </div>
 
-      <Container className="relative py-20 sm:py-28 lg:py-36">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-20">
-          {/* Text content */}
-          <div className="max-w-2xl lg:flex-1">
-            {/* Mobile profile photo — compact circular avatar */}
-            <div className="mb-6 flex items-center gap-4 lg:hidden">
-              <div className="relative">
-                <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-[var(--color-accent)] to-teal-600 opacity-30 blur-[2px]" />
-                <div className="relative h-16 w-16 overflow-hidden rounded-full bg-zinc-100 ring-1 ring-[var(--color-border)] sm:h-20 sm:w-20 dark:bg-zinc-800 dark:ring-[var(--color-border-dark)]">
-                  <Image
-                    src="/profile.png"
-                    alt="Alexandre Jaques"
-                    fill
-                    className="object-cover"
-                    sizes="80px"
-                    priority
-                  />
-                </div>
+          <h1>
+            Alexandre
+            <br />
+            <span className="it">
+              Jaques<span className="accent">.</span>
+            </span>
+          </h1>
+
+          <div className="hero-sub">
+            <p className="lede">
+              Full-stack developer based in Lisbon — I build{" "}
+              <em>scalable products</em>, AI workflows, and the unsexy plumbing
+              that makes them ship.
+            </p>
+            <div className="meta-block">
+              <div>
+                <span className="lab">Currently</span>
+                Director, ChatGuru
+                <br />
+                Studying AI &amp; ML Engineering
               </div>
-            </div>
-
-            {/* Greeting — mono accent */}
-            <p className="font-[family-name:var(--font-mono)] text-sm tracking-wider text-[var(--color-accent)] dark:text-[var(--color-accent-light)]">
-              {t("hero.greeting")}
-            </p>
-
-            {/* Name — extreme display font */}
-            <h1 className="mt-4 font-[family-name:var(--font-display)] text-5xl font-extrabold tracking-tight text-zinc-900 sm:text-6xl lg:text-7xl dark:text-zinc-50">
-              {t("hero.title")}
-            </h1>
-
-            {/* Typewriter roles */}
-            <div className="mt-4 h-[2rem] sm:h-[2.5rem]" aria-label={roles.join(", ")}>
-              <Typewriter
-                key={locale}
-                text={roles}
-                speed={60}
-                deleteSpeed={35}
-                waitTime={2000}
-                loop
-                className="font-[family-name:var(--font-display)] text-lg font-semibold text-[var(--color-accent)] sm:text-xl dark:text-[var(--color-accent-light)]"
-                cursorChar="_"
-                cursorClassName="ml-0.5 text-[var(--color-accent)] dark:text-[var(--color-accent-light)]"
-              />
-            </div>
-
-            {/* Subtitle — editorial serif body */}
-            <p className="mt-8 max-w-lg text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-              {t("hero.subtitle")}
-            </p>
-
-            {/* Social links + CTA */}
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-[var(--color-accent)] px-5 py-2.5 font-[family-name:var(--font-display)] text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--color-accent-light)] hover:shadow-md active:scale-[0.98]"
-              >
-                {t("hero.cta")}
-                <ArrowDownIcon className="h-4 w-4" />
-              </a>
-              <div className="flex items-center">
-                <SocialLink
-                  href="https://github.com/alexandre2120"
-                  icon={GitHubIcon}
-                  label="GitHub"
-                />
-                <SocialLink
-                  href="https://www.linkedin.com/in/alexandre-jaques-b66249135/"
-                  icon={LinkedInIcon}
-                  label="LinkedIn"
-                />
-                <SocialLink
-                  href="https://www.instagram.com/alexandrejaquees/"
-                  icon={InstagramIcon}
-                  label="Instagram"
-                />
-                <SocialLink
-                  href="mailto:alexandrjaques@gmail.com"
-                  icon={MailIcon}
-                  label="Email"
-                />
+              <div>
+                <span className="lab">Stack</span>
+                JavaScript · TypeScript · React · Next.js
+                <br />
+                Python · n8n · Make · Supabase
+              </div>
+              <div>
+                <span className="lab">Available</span>
+                Selective freelance &amp; collaborations
+                <br />
+                Q2 — Q3 2026
               </div>
             </div>
           </div>
 
-          {/* Profile photo — asymmetric with accent accent */}
-          <div className="hidden lg:block">
-            <div className="relative">
-              {/* Accent border offset */}
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-[var(--color-accent)] to-teal-600 opacity-20 blur-sm" />
-              <div className="relative h-56 w-56 overflow-hidden rounded-2xl bg-zinc-100 ring-1 ring-[var(--color-border)] dark:bg-zinc-800 dark:ring-[var(--color-border-dark)]">
-                <Image
-                  src="/profile.png"
-                  alt="Alexandre Jaques"
-                  fill
-                  className="object-cover"
-                  sizes="224px"
-                  priority
-                />
-              </div>
-            </div>
+          <div className="hero-cta">
+            <a href="#contact" className="btn btn-primary">
+              Get in touch
+              <span className="arr">↗</span>
+            </a>
+            <a href="#work" className="btn">
+              View selected work
+              <span className="arr">→</span>
+            </a>
+          </div>
+
+          <div className="stamp">
+            <Image
+              src="/profile.png"
+              alt="Alexandre Jaques"
+              fill
+              sizes="200px"
+              style={{ objectFit: "cover" }}
+              priority
+            />
+            <span className="badge">Lisbon · 2026</span>
           </div>
         </div>
-      </Container>
-    </section>
+      </section>
+
+      <div className="marquee" aria-hidden="true">
+        <div className="marquee-track">
+          <span>
+            Full-Stack <span className="star">✦</span> AI Engineering{" "}
+            <span className="star">✦</span> Workflow Automation{" "}
+            <span className="star">✦</span> Next.js{" "}
+            <span className="star">✦</span> Operations{" "}
+            <span className="star">✦</span> Founder{" "}
+            <span className="star">✦</span> Lisbon{" "}
+            <span className="star">✦</span>
+          </span>
+          <span>
+            Full-Stack <span className="star">✦</span> AI Engineering{" "}
+            <span className="star">✦</span> Workflow Automation{" "}
+            <span className="star">✦</span> Next.js{" "}
+            <span className="star">✦</span> Operations{" "}
+            <span className="star">✦</span> Founder{" "}
+            <span className="star">✦</span> Lisbon{" "}
+            <span className="star">✦</span>
+          </span>
+        </div>
+      </div>
+    </>
   )
 }
