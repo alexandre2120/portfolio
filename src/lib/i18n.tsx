@@ -4,7 +4,6 @@ import {
   createContext,
   useCallback,
   useContext,
-  useState,
   useSyncExternalStore,
   type ReactNode,
 } from "react"
@@ -21,73 +20,79 @@ type TranslationContextType = {
   setLocale: (locale: Locale) => void
   t: (key: string) => string
   tArray: (key: string) => string[]
+  tValue: <T = unknown>(key: string) => T | undefined
 }
 
 const TranslationContext = createContext<TranslationContextType | null>(null)
 
-function getNestedValue(obj: Record<string, unknown>, path: string): string {
+function getNested(obj: Record<string, unknown>, path: string): unknown {
   const keys = path.split(".")
   let current: unknown = obj
   for (const key of keys) {
-    if (current === null || current === undefined) return path
+    if (current === null || current === undefined) return undefined
     current = (current as Record<string, unknown>)[key]
   }
-  return typeof current === "string" ? current : path
+  return current
 }
 
-function getNestedArray(obj: Record<string, unknown>, path: string): string[] {
-  const keys = path.split(".")
-  let current: unknown = obj
-  for (const key of keys) {
-    if (current === null || current === undefined) return []
-    current = (current as Record<string, unknown>)[key]
-  }
-  return Array.isArray(current) ? (current as string[]) : []
-}
+const localeListeners = new Set<() => void>()
 
-function getSavedLocale(): Locale {
+function readLocale(): Locale {
   if (typeof window === "undefined") return "en"
-  const saved = localStorage.getItem("locale")
+  const saved = window.localStorage.getItem("locale")
   return saved === "pt" ? "pt" : "en"
 }
 
-const subscribe = () => () => {}
-const getSnapshot = () => true
-const getServerSnapshot = () => false
+function subscribeLocale(callback: () => void): () => void {
+  localeListeners.add(callback)
+  const onStorage = (e: StorageEvent) => {
+    if (e.key === "locale") callback()
+  }
+  window.addEventListener("storage", onStorage)
+  return () => {
+    localeListeners.delete(callback)
+    window.removeEventListener("storage", onStorage)
+  }
+}
+
+function getServerLocale(): Locale {
+  return "en"
+}
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const isMounted = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
-  const [locale, setLocaleState] = useState<Locale>("en")
-
-  if (isMounted && locale === "en") {
-    const saved = getSavedLocale()
-    if (saved !== locale) {
-      setLocaleState(saved)
-    }
-  }
+  const locale = useSyncExternalStore(subscribeLocale, readLocale, getServerLocale)
 
   const setLocale = useCallback((newLocale: Locale) => {
-    setLocaleState(newLocale)
-    localStorage.setItem("locale", newLocale)
+    window.localStorage.setItem("locale", newLocale)
     document.documentElement.lang = newLocale
+    localeListeners.forEach((listener) => listener())
   }, [])
 
   const t = useCallback(
     (key: string): string => {
-      return getNestedValue(dictionaries[locale], key)
+      const value = getNested(dictionaries[locale], key)
+      return typeof value === "string" ? value : key
     },
     [locale],
   )
 
   const tArray = useCallback(
     (key: string): string[] => {
-      return getNestedArray(dictionaries[locale], key)
+      const value = getNested(dictionaries[locale], key)
+      return Array.isArray(value) ? (value as string[]) : []
+    },
+    [locale],
+  )
+
+  const tValue = useCallback(
+    <T,>(key: string): T | undefined => {
+      return getNested(dictionaries[locale], key) as T | undefined
     },
     [locale],
   )
 
   return (
-    <TranslationContext.Provider value={{ locale, setLocale, t, tArray }}>
+    <TranslationContext.Provider value={{ locale, setLocale, t, tArray, tValue }}>
       {children}
     </TranslationContext.Provider>
   )

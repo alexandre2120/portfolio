@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useCallback, useEffect, useRef, useState } from "react"
+import { useTranslation } from "@/lib/i18n"
 
 type Slide = { src: string; stamp: string; alt?: string }
 type Deck = {
@@ -13,57 +14,38 @@ type Deck = {
   slides: Slide[]
 }
 
-const DECKS: Deck[] = [
-  {
-    num: "/01",
-    title: (
-      <>
-        Padel <em>App</em>
-      </>
-    ),
-    stack: "Next.js · React Native · Supabase",
-    scope: "3 perfis · 9 telas",
-    slideWidth: 1024,
-    slides: [
-      { src: "/mockups/padel-01.jpg", stamp: "01 · Vista Geral", alt: "Padel app vista geral" },
-      { src: "/mockups/padel-02.jpg", stamp: "02 · Jogador · Feed" },
-      { src: "/mockups/padel-03.jpg", stamp: "03 · Clube · Dashboard" },
-      { src: "/mockups/padel-04.jpg", stamp: "04 · Clube · Agenda" },
-      { src: "/mockups/padel-05.jpg", stamp: "05 · Mix Automático" },
-      { src: "/mockups/padel-06.jpg", stamp: "06 · Organizador · Mix" },
-      { src: "/mockups/padel-07.jpg", stamp: "07 · Organizador · Eventos" },
-      { src: "/mockups/padel-08.jpg", stamp: "08 · Comunidade" },
-      { src: "/mockups/padel-09.jpg", stamp: "09 · Convidar Jogadores" },
-    ],
-  },
-  {
-    num: "/02",
-    title: (
-      <>
-        Daillo <em>iOS</em>
-      </>
-    ),
-    stack: "Expo · Supabase · GPT-4o",
-    scope: "iOS · 7 telas",
-    slideWidth: 880,
-    slides: [
-      { src: "/mockups/daillo-01.jpg", stamp: "00 · Capa", alt: "Daillo cover" },
-      { src: "/mockups/daillo-02.jpg", stamp: "01 · Chat com Pilly" },
-      { src: "/mockups/daillo-03.jpg", stamp: "02 · Stack Gerado" },
-      { src: "/mockups/daillo-04.jpg", stamp: "03 · Hoje · Checklist" },
-      { src: "/mockups/daillo-05.jpg", stamp: "04 · Daily Check-in" },
-      { src: "/mockups/daillo-06.jpg", stamp: "05 · Detalhe do Suplemento" },
-      { src: "/mockups/daillo-07.jpg", stamp: "06 · Chat · Histórico" },
-      { src: "/mockups/daillo-08.jpg", stamp: "07 · Histórico" },
-    ],
-  },
+const PADEL_IMAGES = [
+  "/mockups/padel-01.jpg",
+  "/mockups/padel-02.jpg",
+  "/mockups/padel-03.jpg",
+  "/mockups/padel-04.jpg",
+  "/mockups/padel-05.jpg",
+  "/mockups/padel-06.jpg",
+  "/mockups/padel-07.jpg",
+  "/mockups/padel-08.jpg",
+  "/mockups/padel-09.jpg",
+]
+
+const DAILLO_IMAGES = [
+  "/mockups/daillo-01.jpg",
+  "/mockups/daillo-02.jpg",
+  "/mockups/daillo-03.jpg",
+  "/mockups/daillo-04.jpg",
+  "/mockups/daillo-05.jpg",
+  "/mockups/daillo-06.jpg",
+  "/mockups/daillo-07.jpg",
+  "/mockups/daillo-08.jpg",
 ]
 
 function Carousel({
   deck,
+  stackLabel,
+  scopeLabel,
   onOpenLightbox,
 }: {
   deck: Deck
+  stackLabel: string
+  scopeLabel: string
   onOpenLightbox: (src: string, meta: string) => void
 }) {
   const [idx, setIdx] = useState(0)
@@ -141,11 +123,11 @@ function Carousel({
         <div className="mk-title">{deck.title}</div>
         <div className="mk-meta">
           <div>
-            <span className="lab">Stack</span>
+            <span className="lab">{stackLabel}</span>
             {deck.stack}
           </div>
           <div style={{ marginTop: 10 }}>
-            <span className="lab">Scope</span>
+            <span className="lab">{scopeLabel}</span>
             {deck.scope}
           </div>
         </div>
@@ -229,6 +211,7 @@ function Carousel({
 }
 
 export function Mockups() {
+  const { t, tArray } = useTranslation()
   const [lightbox, setLightbox] = useState<{ src: string; meta: string } | null>(null)
 
   useEffect(() => {
@@ -239,6 +222,44 @@ export function Mockups() {
     return () => document.removeEventListener("keydown", onKey)
   }, [])
 
+  const padelSlideStamps = tArray("mockups.padel.slides")
+  const dailloSlideStamps = tArray("mockups.daillo.slides")
+
+  const decks: Deck[] = [
+    {
+      num: "/01",
+      title: (
+        <>
+          {t("mockups.padel.title")} <em>{t("mockups.padel.titleEm")}</em>
+        </>
+      ),
+      stack: t("mockups.padel.stack"),
+      scope: t("mockups.padel.scope"),
+      slideWidth: 1024,
+      slides: PADEL_IMAGES.map((src, i) => ({
+        src,
+        stamp: padelSlideStamps[i] ?? "",
+        alt: i === 0 ? t("mockups.padel.title") : undefined,
+      })),
+    },
+    {
+      num: "/02",
+      title: (
+        <>
+          {t("mockups.daillo.title")} <em>{t("mockups.daillo.titleEm")}</em>
+        </>
+      ),
+      stack: t("mockups.daillo.stack"),
+      scope: t("mockups.daillo.scope"),
+      slideWidth: 880,
+      slides: DAILLO_IMAGES.map((src, i) => ({
+        src,
+        stamp: dailloSlideStamps[i] ?? "",
+        alt: i === 0 ? t("mockups.daillo.title") : undefined,
+      })),
+    },
+  ]
+
   return (
     <>
       <section className="sec mockups" id="mockups">
@@ -246,26 +267,29 @@ export function Mockups() {
           <div className="sec-head">
             <div className="num-col">
               <div className="big">/03</div>
-              <div className="lab">Mockups</div>
+              <div className="lab">{t("mockups.label")}</div>
             </div>
             <div className="title-col">
               <h2>
-                Concepts &amp; <span className="it">explorations.</span>
+                {t("mockups.headlinePrefix")}
+                <span className="it">{t("mockups.headlineEm")}</span>
               </h2>
             </div>
             <div className="meta-col mono">
-              02 decks
+              {t("mockups.metaDecks")}
               <br />
-              17 screens
+              {t("mockups.metaScreens")}
             </div>
           </div>
         </div>
 
         <div className="mk-deck">
-          {DECKS.map((deck) => (
+          {decks.map((deck) => (
             <Carousel
               key={deck.num}
               deck={deck}
+              stackLabel={t("mockups.stackLabel")}
+              scopeLabel={t("mockups.scopeLabel")}
               onOpenLightbox={(src, meta) => setLightbox({ src, meta })}
             />
           ))}

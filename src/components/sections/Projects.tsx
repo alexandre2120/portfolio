@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useEffect, useRef } from "react"
+import { useTranslation } from "@/lib/i18n"
 
 type Project = {
   num: string
@@ -66,6 +67,7 @@ const PROJECTS: Project[] = [
 ]
 
 export function Projects() {
+  const { t } = useTranslation()
   const listRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -102,19 +104,20 @@ export function Projects() {
         <div className="sec-head">
           <div className="num-col">
             <div className="big">/02</div>
-            <div className="lab">Selected Work</div>
+            <div className="lab">{t("projects.label")}</div>
           </div>
           <div className="title-col">
             <h2>
-              Things I&apos;ve <span className="it">built</span>
+              {t("projects.headlinePrefix")}
+              <span className="it">{t("projects.headlineEm")}</span>
               <br />
-              and shipped.
+              {t("projects.headlineSuffix")}
             </h2>
           </div>
           <div className="meta-col mono">
-            2021 → 2026
+            {t("projects.metaYears")}
             <br />
-            05 projects
+            {t("projects.metaCount")}
           </div>
         </div>
 
@@ -130,12 +133,12 @@ export function Projects() {
               <div className="p-num">{p.num}</div>
               <div className="p-title">{p.title}</div>
               <div className="p-tags">
-                {p.tags.map((t) => (
-                  <span key={t}>{t}</span>
+                {p.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
                 ))}
               </div>
               <div className="p-meta">
-                Live <span className="arrow">↗</span>
+                {t("projects.live")} <span className="arrow">↗</span>
               </div>
               <div className="preview">
                 <Image src={p.img} alt="" width={380} height={260} />

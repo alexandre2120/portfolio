@@ -1,4 +1,10 @@
+"use client"
+
+import { useTranslation } from "@/lib/i18n"
+
 export function Contact() {
+  const { t } = useTranslation()
+
   return (
     <section className="contact" id="contact">
       <div className="wrap">
@@ -13,12 +19,13 @@ export function Contact() {
                 background: "#22c55e",
               }}
             />
-            Available for work · Q2 / Q3 2026
+            {t("contact.available")}
           </div>
           <h2>
-            Let&apos;s <span className="it">build</span>
+            {t("contact.headlinePrefix")}
+            <span className="it">{t("contact.headlineEm")}</span>
             <br />
-            something good.
+            {t("contact.headlineSuffix")}
           </h2>
           <a href="mailto:alexandrjaques@gmail.com" className="email">
             <span>alexandrjaques@gmail.com</span>
@@ -30,24 +37,24 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub <span className="arr">↗</span>
+              {t("contact.github")} <span className="arr">↗</span>
             </a>
             <a
               href="https://www.linkedin.com/in/alexandre-jaques-b66249135/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn <span className="arr">↗</span>
+              {t("contact.linkedin")} <span className="arr">↗</span>
             </a>
             <a
               href="https://www.instagram.com/alexandrejaquees/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram <span className="arr">↗</span>
+              {t("contact.instagram")} <span className="arr">↗</span>
             </a>
             <a href="mailto:alexandrjaques@gmail.com">
-              Email <span className="arr">↗</span>
+              {t("contact.email")} <span className="arr">↗</span>
             </a>
           </div>
         </div>
