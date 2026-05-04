@@ -14,7 +14,9 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
-      <Mockups />
+      <div className="hidden md:block">
+        <Mockups />
+      </div>
       <Experience />
       <Skills />
       <Testimonials />
