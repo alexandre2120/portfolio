@@ -1,25 +1,31 @@
+"use client"
+
 import Image from "next/image"
+import { useTranslation } from "@/lib/i18n"
 
 export function About() {
+  const { t } = useTranslation()
+
   return (
     <section className="sec" id="about">
       <div className="wrap">
         <div className="sec-head">
           <div className="num-col">
             <div className="big">/01</div>
-            <div className="lab">About</div>
+            <div className="lab">{t("about.label")}</div>
           </div>
           <div className="title-col">
             <h2>
-              An engineer
+              {t("about.headlinePrefix")}
               <br />
-              who <span className="it">runs ops.</span>
+              {t("about.headlineMiddle")}
+              <span className="it">{t("about.headlineEm")}</span>
             </h2>
           </div>
           <div className="meta-col mono">
-            Section 01 / 05
+            {t("about.metaSection")}
             <br />
-            Last updated · 04.05.26
+            {t("about.metaUpdated")}
           </div>
         </div>
 
@@ -38,51 +44,40 @@ export function About() {
               </div>
             </div>
             <div className="tag">
-              <span>Alexandre Jaques · Lisbon</span>
-              <span>EST. 2019 · 6Y</span>
+              <span>{t("about.tagName")}</span>
+              <span>{t("about.tagEst")}</span>
             </div>
           </div>
 
           <div className="about-body reveal">
             <p className="about-lede">
-              Six years at a SaaS startup taught me that <em>shipping</em> is
-              just the beginning. What compounds is the system around it.
+              {t("about.ledePrefix")}
+              <em>{t("about.ledeEm")}</em>
+              {t("about.ledeSuffix")}
             </p>
-            <p className="about-p">
-              I&apos;m a Full-Stack Developer based in Lisbon with an unusual
-              combination: 6+ years of Operations leadership at ChatGuru,
-              founding IntegraNinja to design automation systems for clients in
-              legal, retail, healthcare, and real estate, and hands-on
-              engineering across the React/Next.js stack.
-            </p>
-            <p className="about-p">
-              Lately I&apos;ve been deep in AI Engineering (Claude Code, LLM
-              APIs, agentic workflows) and integrating them into the kind of
-              operational backbones I spent years optimizing by hand. Currently
-              studying AI &amp; Machine Learning Engineering, focused on
-              building scalable, useful systems.
-            </p>
+            <p className="about-p">{t("about.p1")}</p>
+            <p className="about-p">{t("about.p2")}</p>
 
             <div className="about-stats">
               <div className="stat">
                 <div className="v">
                   6<sup>+</sup>
                 </div>
-                <div className="l">Years in SaaS</div>
+                <div className="l">{t("about.stat1Label")}</div>
               </div>
               <div className="stat">
                 <div className="v">
                   60<sup>%</sup>
                 </div>
-                <div className="l">Manual work cut</div>
+                <div className="l">{t("about.stat2Label")}</div>
               </div>
               <div className="stat">
                 <div className="v">5</div>
-                <div className="l">Active products</div>
+                <div className="l">{t("about.stat3Label")}</div>
               </div>
               <div className="stat">
                 <div className="v">∞</div>
-                <div className="l">Workflows shipped</div>
+                <div className="l">{t("about.stat4Label")}</div>
               </div>
             </div>
           </div>

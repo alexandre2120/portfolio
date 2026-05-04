@@ -1,74 +1,39 @@
+"use client"
+
+import { useTranslation } from "@/lib/i18n"
+
 type SkillRow = { name: string; pct: number }
 type SkillCard = { num: string; title: string; rows: SkillRow[] }
 
-const CARDS: SkillCard[] = [
-  {
-    num: "/01",
-    title: "Development",
-    rows: [
-      { name: "JavaScript / TypeScript", pct: 85 },
-      { name: "React & Next.js", pct: 85 },
-      { name: "RESTful APIs", pct: 95 },
-      { name: "Supabase / MongoDB", pct: 90 },
-    ],
-  },
-  {
-    num: "/02",
-    title: "AI & Automation",
-    rows: [
-      { name: "Claude Code", pct: 95 },
-      { name: "AI / LLM APIs", pct: 95 },
-      { name: "n8n / Make", pct: 95 },
-      { name: "Python Scripting", pct: 90 },
-    ],
-  },
-  {
-    num: "/03",
-    title: "Infrastructure",
-    rows: [
-      { name: "Cloud Servers", pct: 80 },
-      { name: "Docker / K8s", pct: 65 },
-      { name: "Workflow Automation", pct: 95 },
-      { name: "Data Analysis", pct: 90 },
-    ],
-  },
-  {
-    num: "/04",
-    title: "Leadership",
-    rows: [
-      { name: "Team Management", pct: 95 },
-      { name: "Strategic Planning", pct: 85 },
-      { name: "Performance Metrics", pct: 90 },
-      { name: "Process Optimization", pct: 95 },
-    ],
-  },
-]
-
 export function Skills() {
+  const { t, tValue } = useTranslation()
+  const cards = tValue<SkillCard[]>("skills.categories") ?? []
+
   return (
     <section className="sec" id="skills">
       <div className="wrap">
         <div className="sec-head">
           <div className="num-col">
             <div className="big">/05</div>
-            <div className="lab">Skills</div>
+            <div className="lab">{t("skills.label")}</div>
           </div>
           <div className="title-col">
             <h2>
-              What I <span className="it">do</span>
+              {t("skills.headlinePrefix")}
+              <span className="it">{t("skills.headlineEm")}</span>
               <br />
-              well, by area.
+              {t("skills.headlineSuffix")}
             </h2>
           </div>
           <div className="meta-col mono">
-            04 categories
+            {t("skills.metaCategories")}
             <br />
-            17 disciplines
+            {t("skills.metaDisciplines")}
           </div>
         </div>
 
         <div className="skills">
-          {CARDS.map((card) => (
+          {cards.map((card) => (
             <div key={card.num} className="skill-card">
               <span className="num">{card.num}</span>
               <h3>{card.title}</h3>

@@ -4,12 +4,12 @@ import { useEffect, useState } from "react"
 import { useTranslation } from "@/lib/i18n"
 
 const NAV_LINKS = [
-  { num: "01", id: "about", label: "About" },
-  { num: "02", id: "work", label: "Work" },
-  { num: "03", id: "mockups", label: "Mockups" },
-  { num: "04", id: "experience", label: "Experience" },
-  { num: "05", id: "skills", label: "Skills" },
-  { num: "06", id: "contact", label: "Contact" },
+  { num: "01", id: "about", key: "nav.about" },
+  { num: "02", id: "work", key: "nav.work" },
+  { num: "03", id: "mockups", key: "nav.mockups" },
+  { num: "04", id: "experience", key: "nav.experience" },
+  { num: "05", id: "skills", key: "nav.skills" },
+  { num: "06", id: "contact", key: "nav.contact" },
 ] as const
 
 function useLisbonClock() {
@@ -33,7 +33,7 @@ function useLisbonClock() {
 
 export function Header() {
   const time = useLisbonClock()
-  const { locale, setLocale } = useTranslation()
+  const { locale, setLocale, t } = useTranslation()
 
   return (
     <nav className="nav">
@@ -48,7 +48,7 @@ export function Header() {
           {NAV_LINKS.map((link) => (
             <a key={link.id} href={`#${link.id}`}>
               <span className="nl-num">{link.num}</span>
-              {link.label}
+              {t(link.key)}
             </a>
           ))}
         </div>

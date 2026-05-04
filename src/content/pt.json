@@ -1,109 +1,242 @@
 {
   "nav": {
     "about": "Sobre",
-    "skills": "Habilidades",
+    "work": "Projetos",
+    "mockups": "Mockups",
     "experience": "Experiência",
-    "projects": "Projetos",
-    "testimonials": "Recomendações",
-    "certifications": "Certificações",
+    "skills": "Habilidades",
     "contact": "Contato",
     "articles": "Artigos"
   },
   "hero": {
-    "greeting": "Olá, sou Alexandre",
-    "title": "Alexandre Jaques",
-    "roles": [
-      "Fundador & Desenvolvedor Full Stack",
-      "Engenheiro Sênior de Integração & Automação"
-    ],
-    "subtitle": "Construindo soluções escaláveis com JavaScript, React e Next.js. Combinando 6+ anos de liderança em Operações com desenvolvimento full-stack e engenharia de IA.",
-    "cta": "Entre em contato"
+    "indexLabel": "Índice/01",
+    "portfolioLabel": "Portfólio · 2026",
+    "statusLabel": "Status",
+    "statusValue": "Disponível para trabalhar",
+    "firstName": "Alexandre",
+    "lastName": "Jaques",
+    "ledePrefix": "Desenvolvedor full-stack baseado em Lisboa. Construo ",
+    "ledeEm": "produtos escaláveis",
+    "ledeSuffix": ", workflows de IA e a infraestrutura silenciosa que faz tudo isso entregar.",
+    "currentlyLabel": "Atualmente",
+    "currentlyLine1": "Diretor, ChatGuru",
+    "currentlyLine2": "Estudando Engenharia de IA & ML",
+    "stackLabel": "Stack",
+    "stackLine1": "JavaScript · TypeScript · React · Next.js",
+    "stackLine2": "Python · n8n · Make · Supabase",
+    "availableLabel": "Disponível",
+    "availableLine1": "Freelance & colaborações seletivas",
+    "availableLine2": "Q2 / Q3 2026",
+    "ctaPrimary": "Entre em contato",
+    "ctaSecondary": "Ver projetos selecionados",
+    "stampBadge": "Lisboa · 2026",
+    "marquee": "Full-Stack ✦ Engenharia de IA ✦ Automação de Workflows ✦ Next.js ✦ Operações ✦ Founder ✦ Lisboa ✦"
   },
   "about": {
-    "title": "Sobre",
-    "paragraphs": [
-      "Desenvolvedor Full-Stack baseado em Lisboa, Portugal, com uma formação única combinando 6+ anos de liderança em Operações em uma startup SaaS com engenharia de software prática.",
-      "Especializo-me em JavaScript, React e Next.js, com profunda experiência em codificação com IA, integração de APIs RESTful e automação de workflows usando n8n/Make e scripts Python.",
-      "Atualmente estudando Engenharia de IA e Machine Learning, focado em aproveitar expertise técnica e planejamento estratégico para impulsionar inovação e soluções escaláveis."
-    ]
+    "label": "Sobre",
+    "headlinePrefix": "Um engenheiro",
+    "headlineMiddle": "que ",
+    "headlineEm": "lidera ops.",
+    "metaSection": "Seção 01 / 05",
+    "metaUpdated": "Atualizado · 04.05.26",
+    "tagName": "Alexandre Jaques · Lisboa",
+    "tagEst": "EST. 2019 · 6A",
+    "ledePrefix": "Seis anos numa startup SaaS me ensinaram que ",
+    "ledeEm": "entregar",
+    "ledeSuffix": " é só o começo. O que compõe valor é o sistema ao redor.",
+    "p1": "Sou Desenvolvedor Full-Stack baseado em Lisboa, com uma combinação rara: 6+ anos de liderança em Operações na ChatGuru, fundando a IntegraNinja para projetar sistemas de automação para clientes nos setores jurídico, varejo, saúde e imobiliário, e engenharia hands-on no stack React/Next.js.",
+    "p2": "Recentemente tenho mergulhado em Engenharia de IA (Claude Code, APIs de LLM, workflows agentivos) e integrando isso aos backbones operacionais que passei anos otimizando manualmente. Atualmente estudo Engenharia de IA & Machine Learning, focado em construir sistemas escaláveis e úteis.",
+    "stat1Label": "Anos em SaaS",
+    "stat2Label": "Trabalho manual cortado",
+    "stat3Label": "Produtos ativos",
+    "stat4Label": "Workflows entregues"
   },
-  "skills": {
-    "title": "Habilidades",
-    "categories": {
-      "development": "Desenvolvimento",
-      "ai": "IA & Automação",
-      "infrastructure": "Infraestrutura",
-      "leadership": "Liderança"
+  "projects": {
+    "label": "Projetos Selecionados",
+    "headlinePrefix": "Coisas que ",
+    "headlineEm": "construí",
+    "headlineSuffix": "e entreguei.",
+    "metaYears": "2021 → 2026",
+    "metaCount": "05 projetos",
+    "live": "Live"
+  },
+  "mockups": {
+    "label": "Mockups",
+    "headlinePrefix": "Conceitos & ",
+    "headlineEm": "explorações.",
+    "metaDecks": "02 decks",
+    "metaScreens": "17 telas",
+    "stackLabel": "Stack",
+    "scopeLabel": "Escopo",
+    "padel": {
+      "title": "Padel",
+      "titleEm": "App",
+      "stack": "Next.js · React Native · Supabase",
+      "scope": "3 perfis · 9 telas",
+      "slides": [
+        "01 · Vista Geral",
+        "02 · Jogador · Feed",
+        "03 · Clube · Dashboard",
+        "04 · Clube · Agenda",
+        "05 · Mix Automático",
+        "06 · Organizador · Mix",
+        "07 · Organizador · Eventos",
+        "08 · Comunidade",
+        "09 · Convidar Jogadores"
+      ]
+    },
+    "daillo": {
+      "title": "Daillo",
+      "titleEm": "iOS",
+      "stack": "Expo · Supabase · GPT-4o",
+      "scope": "iOS · 7 telas",
+      "slides": [
+        "00 · Capa",
+        "01 · Chat com Pilly",
+        "02 · Stack Gerado",
+        "03 · Hoje · Checklist",
+        "04 · Daily Check-in",
+        "05 · Detalhe do Suplemento",
+        "06 · Chat · Histórico",
+        "07 · Histórico"
+      ]
     }
   },
   "experience": {
-    "title": "Experiência",
-    "subtitle": "Minha jornada profissional entre startups e automação.",
+    "label": "Experiência",
+    "headlinePrefix": "De CS a ",
+    "headlineEm": "CEO",
+    "headlineSuffix": "e de volta ao código.",
+    "metaPeriod": "2019 → presente",
+    "metaYears": "7 anos",
     "present": "Presente",
-    "integraninja": {
-      "role": "CEO & Fundador",
-      "company": "IntegraNinja",
-      "period": "Jul 2021 - Jan 2025",
-      "description": "Fundei e liderei a IntegraNinja, uma empresa de serviços especializada em soluções de automação e integrações de APIs para clientes de múltiplos setores.",
-      "highlights": [
-        "Projetei, implementei e mantive workflows de automação, integrações customizadas e aplicações leves",
-        "Entreguei projetos de automação para clientes nos setores jurídico, varejo, saúde, imobiliário e serviços profissionais",
-        "Construí soluções flexíveis e escaláveis usando n8n, Make, Next.js e microsserviços Python",
-        "Reduzi custos operacionais e trabalho manual através de sincronização de dados e automação de workflows",
-        "Consultoria: mapeamento de processos, identificação de gargalos e design de estratégias de automação"
-      ]
-    },
-    "director": {
-      "role": "Diretor",
-      "company": "ChatGuru",
-      "period": "2025",
-      "description": "Liderança estratégica impulsionando transformação digital e excelência operacional em toda a organização."
-    },
-    "headOps": {
-      "role": "Head de Operações",
-      "company": "ChatGuru",
-      "period": "2020 - 2025",
-      "description": "Liderança de equipes multifuncionais em otimização de processos, integração de IA e escalonamento de operações da plataforma SaaS.",
-      "highlights": [
-        "Gerenciei equipes de CS, Suporte e Operações durante o rápido crescimento da empresa",
-        "Implementei workflows de automação que reduziram processos manuais em 60%+",
-        "Liderei a integração de ferramentas de IA nas operações internas e produtos voltados ao cliente"
-      ]
-    },
-    "managerCS": {
-      "role": "Gerente de Customer Success",
-      "company": "ChatGuru",
-      "period": "2020",
-      "description": "Construí e gerenciei a equipe de Customer Success, estabelecendo processos de onboarding, retenção e expansão."
-    },
-    "analystCS": {
-      "role": "Analista de Customer Success",
-      "company": "ChatGuru",
-      "period": "2019 - 2020",
-      "description": "Primeiro contratado de CS. Gerenciei onboarding, suporte e workflows de sucesso do cliente desde o zero."
-    }
+    "roles": [
+      {
+        "date": "2025 → Presente",
+        "role": "Diretor",
+        "company": "ChatGuru",
+        "desc": "Liderança estratégica conduzindo a transformação digital e a excelência operacional em toda a organização.",
+        "tag": "Liderança"
+      },
+      {
+        "date": "2021 → 2025",
+        "role": "CEO & Fundador",
+        "company": "IntegraNinja",
+        "desc": "Fundei uma empresa de serviços especializada em automação e integrações de API. Entreguei projetos nos setores jurídico, varejo, saúde, imobiliário e serviços profissionais usando n8n, Make, Next.js e microsserviços Python.",
+        "tag": "Founder"
+      },
+      {
+        "date": "2020 → 2025",
+        "role": "Head de Operações",
+        "company": "ChatGuru",
+        "desc": "Liderei equipes multifuncionais em otimização de processos, integração de IA e escalonamento das operações da plataforma SaaS. Reduzi processos manuais em 60%+ através de automação.",
+        "tag": "Operações"
+      },
+      {
+        "date": "2020",
+        "role": "Gerente de Customer Success",
+        "company": "ChatGuru",
+        "desc": "Construí e gerenciei a equipe de Customer Success. Estabeleci processos de onboarding, retenção e expansão.",
+        "tag": "CS"
+      },
+      {
+        "date": "2019 → 2020",
+        "role": "Analista de Customer Success",
+        "company": "ChatGuru",
+        "desc": "Primeiro contratado de CS. Cuidei do onboarding, suporte e workflows de sucesso do cliente desde o zero.",
+        "tag": "Primeira contratação"
+      }
+    ]
+  },
+  "skills": {
+    "label": "Habilidades",
+    "headlinePrefix": "O que ",
+    "headlineEm": "faço",
+    "headlineSuffix": "bem, por área.",
+    "metaCategories": "04 categorias",
+    "metaDisciplines": "17 disciplinas",
+    "categories": [
+      {
+        "num": "/01",
+        "title": "Desenvolvimento",
+        "rows": [
+          { "name": "JavaScript / TypeScript", "pct": 85 },
+          { "name": "React & Next.js", "pct": 85 },
+          { "name": "APIs RESTful", "pct": 95 },
+          { "name": "Supabase / MongoDB", "pct": 90 }
+        ]
+      },
+      {
+        "num": "/02",
+        "title": "IA & Automação",
+        "rows": [
+          { "name": "Claude Code", "pct": 95 },
+          { "name": "APIs de IA / LLM", "pct": 95 },
+          { "name": "n8n / Make", "pct": 95 },
+          { "name": "Scripts Python", "pct": 90 }
+        ]
+      },
+      {
+        "num": "/03",
+        "title": "Infraestrutura",
+        "rows": [
+          { "name": "Servidores Cloud", "pct": 80 },
+          { "name": "Docker / K8s", "pct": 65 },
+          { "name": "Automação de Workflows", "pct": 95 },
+          { "name": "Análise de Dados", "pct": 90 }
+        ]
+      },
+      {
+        "num": "/04",
+        "title": "Liderança",
+        "rows": [
+          { "name": "Gestão de Equipes", "pct": 95 },
+          { "name": "Planejamento Estratégico", "pct": 85 },
+          { "name": "Métricas de Performance", "pct": 90 },
+          { "name": "Otimização de Processos", "pct": 95 }
+        ]
+      }
+    ]
   },
   "testimonials": {
-    "title": "Recomendações",
-    "subtitle": "O que colegas e líderes dizem sobre trabalhar comigo."
+    "label": "Recomendações",
+    "headlinePrefix": "O que ",
+    "headlineEm": "colegas",
+    "headlineSuffix": "dizem.",
+    "metaCount": "02 depoimentos",
+    "metaSource": "Founders da ChatGuru",
+    "quotes": [
+      {
+        "body": "O Alexandre foi a nossa primeira contratação na ChatGuru e, desde então, provou ser um profissional extremamente versátil, comprometido e responsável. Tem uma capacidade única de aprender e se adaptar, é fácil de trabalhar, inteligente e alguém em quem se pode confiar completamente.",
+        "initials": "FC",
+        "name": "Fernando Cavalcanti",
+        "role": "CEO & Co-Fundador · ChatGuru"
+      },
+      {
+        "body": "O Alex foi uma das primeiras pessoas na ChatGuru e teve um papel fundamental no nosso crescimento. Aprende rápido, adapta-se rapidamente e consistentemente entregou o que precisávamos, mesmo nos momentos mais exigentes. Confiável, fácil de trabalhar e muito atento aos detalhes.",
+        "initials": "IS",
+        "name": "Iaron Simis",
+        "role": "Co-Fundador & CTO · ChatGuru"
+      }
+    ]
   },
   "certifications": {
     "title": "Certificações",
     "expires": "Expira"
   },
-  "projects": {
-    "title": "Projetos",
-    "subtitle": "Uma seleção de projetos em que trabalhei.",
-    "viewProject": "Ver projeto"
-  },
   "contact": {
-    "title": "Contato",
-    "subtitle": "Vamos trabalhar juntos. Sinta-se à vontade para entrar em contato.",
-    "location": "Lisboa, Portugal",
-    "email": "Email",
-    "github": "GitHub"
+    "available": "Disponível para trabalhar · Q2 / Q3 2026",
+    "headlinePrefix": "Vamos ",
+    "headlineEm": "construir",
+    "headlineSuffix": "algo bom.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "email": "Email"
   },
   "footer": {
-    "rights": "Todos os direitos reservados."
+    "rights": "© 2026 Alexandre Jaques. Todos os direitos reservados.",
+    "location": "Lisboa, Portugal · 38.7223° N, 9.1393° W",
+    "version": "v.2026.05 · refresh edition"
   }
 }

@@ -1,68 +1,74 @@
+"use client"
+
 import Image from "next/image"
+import { useTranslation } from "@/lib/i18n"
 
 export function Hero() {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className="hero" id="top">
         <div className="wrap">
           <div className="hero-meta mono">
             <div className="col">
-              <span>Index/01</span>
-              <span>Portfolio · 2026</span>
+              <span>{t("hero.indexLabel")}</span>
+              <span>{t("hero.portfolioLabel")}</span>
             </div>
             <div className="col" style={{ textAlign: "center" }}>
               <span>Lat 38.7223° N</span>
               <span>Lon 9.1393° W</span>
             </div>
             <div className="col" style={{ textAlign: "right" }}>
-              <span>Status</span>
-              <span style={{ color: "#22c55e" }}>Available for work</span>
+              <span>{t("hero.statusLabel")}</span>
+              <span style={{ color: "#22c55e" }}>{t("hero.statusValue")}</span>
             </div>
           </div>
 
           <h1>
-            Alexandre
+            {t("hero.firstName")}
             <br />
             <span className="it">
-              Jaques<span className="accent">.</span>
+              {t("hero.lastName")}
+              <span className="accent">.</span>
             </span>
           </h1>
 
           <div className="hero-sub">
             <p className="lede">
-              Full-stack developer based in Lisbon. I build{" "}
-              <em>scalable products</em>, AI workflows, and the unsexy plumbing
-              that makes them ship.
+              {t("hero.ledePrefix")}
+              <em>{t("hero.ledeEm")}</em>
+              {t("hero.ledeSuffix")}
             </p>
             <div className="meta-block">
               <div>
-                <span className="lab">Currently</span>
-                Director, ChatGuru
+                <span className="lab">{t("hero.currentlyLabel")}</span>
+                {t("hero.currentlyLine1")}
                 <br />
-                Studying AI &amp; ML Engineering
+                {t("hero.currentlyLine2")}
               </div>
               <div>
-                <span className="lab">Stack</span>
-                JavaScript · TypeScript · React · Next.js
+                <span className="lab">{t("hero.stackLabel")}</span>
+                {t("hero.stackLine1")}
                 <br />
-                Python · n8n · Make · Supabase
+                {t("hero.stackLine2")}
               </div>
               <div>
-                <span className="lab">Available</span>
-                Selective freelance &amp; collaborations
+                <span className="lab">{t("hero.availableLabel")}</span>
+                {t("hero.availableLine1")}
                 <br />
-                Q2 / Q3 2026
+                {t("hero.availableLine2")}
               </div>
             </div>
           </div>
 
           <div className="hero-cta">
             <a href="#contact" className="btn btn-primary">
-              Get in touch
+              {t("hero.ctaPrimary")}
               <span className="arr">↗</span>
             </a>
             <a href="#work" className="btn">
-              View selected work
+              {t("hero.ctaSecondary")}
               <span className="arr">→</span>
             </a>
           </div>
@@ -76,31 +82,15 @@ export function Hero() {
               style={{ objectFit: "cover" }}
               priority
             />
-            <span className="badge">Lisbon · 2026</span>
+            <span className="badge">{t("hero.stampBadge")}</span>
           </div>
         </div>
       </section>
 
       <div className="marquee" aria-hidden="true">
         <div className="marquee-track">
-          <span>
-            Full-Stack <span className="star">✦</span> AI Engineering{" "}
-            <span className="star">✦</span> Workflow Automation{" "}
-            <span className="star">✦</span> Next.js{" "}
-            <span className="star">✦</span> Operations{" "}
-            <span className="star">✦</span> Founder{" "}
-            <span className="star">✦</span> Lisbon{" "}
-            <span className="star">✦</span>
-          </span>
-          <span>
-            Full-Stack <span className="star">✦</span> AI Engineering{" "}
-            <span className="star">✦</span> Workflow Automation{" "}
-            <span className="star">✦</span> Next.js{" "}
-            <span className="star">✦</span> Operations{" "}
-            <span className="star">✦</span> Founder{" "}
-            <span className="star">✦</span> Lisbon{" "}
-            <span className="star">✦</span>
-          </span>
+          <span>{t("hero.marquee")}</span>
+          <span>{t("hero.marquee")}</span>
         </div>
       </div>
     </>
