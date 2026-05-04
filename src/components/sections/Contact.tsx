@@ -13,7 +13,7 @@ export function Contact() {
                 background: "#22c55e",
               }}
             />
-            Available for work · Q2 — Q3 2026
+            Available for work · Q2 / Q3 2026
           </div>
           <h2>
             Let&apos;s <span className="it">build</span>

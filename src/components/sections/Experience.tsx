@@ -8,21 +8,21 @@ type Role = {
 
 const ROLES: Role[] = [
   {
-    date: "2025 — Present",
+    date: "2025 → Present",
     role: "Director",
     company: "ChatGuru",
     desc: "Strategic leadership driving digital transformation and operational excellence across the organization.",
     tag: "Leadership",
   },
   {
-    date: "2021 — 2025",
+    date: "2021 → 2025",
     role: "CEO & Founder",
     company: "IntegraNinja",
     desc: "Founded a service company specialized in automation and API integrations. Delivered projects across legal, retail, healthcare, real estate, and professional services using n8n, Make, Next.js, and Python microservices.",
     tag: "Founder",
   },
   {
-    date: "2020 — 2025",
+    date: "2020 → 2025",
     role: "Head of Operations",
     company: "ChatGuru",
     desc: "Led cross-functional teams in process optimization, AI integration, and scaling operations for the SaaS platform. Reduced manual processes by 60%+ through automation.",
@@ -36,7 +36,7 @@ const ROLES: Role[] = [
     tag: "CS",
   },
   {
-    date: "2019 — 2020",
+    date: "2019 → 2020",
     role: "Customer Success Analyst",
     company: "ChatGuru",
     desc: "First CS hire. Handled customer onboarding, support, and success workflows from the ground up.",
@@ -61,7 +61,7 @@ export function Experience() {
             </h2>
           </div>
           <div className="meta-col mono">
-            2019 — present
+            2019 → present
             <br />
             7 years
           </div>

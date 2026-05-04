@@ -8,7 +8,7 @@ export function Hero() {
           <div className="hero-meta mono">
             <div className="col">
               <span>Index/01</span>
-              <span>Portfolio &mdash; 2026</span>
+              <span>Portfolio · 2026</span>
             </div>
             <div className="col" style={{ textAlign: "center" }}>
               <span>Lat 38.7223° N</span>
@@ -30,7 +30,7 @@ export function Hero() {
 
           <div className="hero-sub">
             <p className="lede">
-              Full-stack developer based in Lisbon — I build{" "}
+              Full-stack developer based in Lisbon. I build{" "}
               <em>scalable products</em>, AI workflows, and the unsexy plumbing
               that makes them ship.
             </p>
@@ -51,7 +51,7 @@ export function Hero() {
                 <span className="lab">Available</span>
                 Selective freelance &amp; collaborations
                 <br />
-                Q2 — Q3 2026
+                Q2 / Q3 2026
               </div>
             </div>
           </div>

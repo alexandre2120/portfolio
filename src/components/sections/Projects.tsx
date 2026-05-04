@@ -112,7 +112,7 @@ export function Projects() {
             </h2>
           </div>
           <div className="meta-col mono">
-            2021 — 2026
+            2021 → 2026
             <br />
             05 projects
           </div>

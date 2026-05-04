@@ -39,14 +39,14 @@ export function About() {
             </div>
             <div className="tag">
               <span>Alexandre Jaques · Lisbon</span>
-              <span>EST. 2019 — 6Y</span>
+              <span>EST. 2019 · 6Y</span>
             </div>
           </div>
 
           <div className="about-body reveal">
             <p className="about-lede">
               Six years at a SaaS startup taught me that <em>shipping</em> is
-              just the beginning — what compounds is the system around it.
+              just the beginning. What compounds is the system around it.
             </p>
             <p className="about-p">
               I&apos;m a Full-Stack Developer based in Lisbon with an unusual
@@ -56,8 +56,8 @@ export function About() {
               engineering across the React/Next.js stack.
             </p>
             <p className="about-p">
-              Lately I&apos;ve been deep in AI Engineering — Claude Code, LLM
-              APIs, agentic workflows — and integrating them into the kind of
+              Lately I&apos;ve been deep in AI Engineering (Claude Code, LLM
+              APIs, agentic workflows) and integrating them into the kind of
               operational backbones I spent years optimizing by hand. Currently
               studying AI &amp; Machine Learning Engineering, focused on
               building scalable, useful systems.

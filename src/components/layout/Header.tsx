@@ -13,7 +13,7 @@ const NAV_LINKS = [
 ] as const
 
 function useLisbonClock() {
-  const [time, setTime] = useState<string>("—")
+  const [time, setTime] = useState<string>("--:--:--")
   useEffect(() => {
     const tick = () => {
       const t = new Date().toLocaleTimeString("en-GB", {
