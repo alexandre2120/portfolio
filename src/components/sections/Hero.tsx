@@ -1,10 +1,19 @@
 "use client"
 
 import Image from "next/image"
+import { Fragment } from "react"
 import { useTranslation } from "@/lib/i18n"
 
 export function Hero() {
-  const { t } = useTranslation()
+  const { t, tArray } = useTranslation()
+  const marqueeItems = tArray("hero.marqueeItems")
+  const renderMarquee = () =>
+    marqueeItems.map((item, i) => (
+      <Fragment key={`${item}-${i}`}>
+        <span>{item}</span>
+        <span className="sep">{"</>"}</span>
+      </Fragment>
+    ))
 
   return (
     <>
@@ -89,8 +98,8 @@ export function Hero() {
 
       <div className="marquee" aria-hidden="true">
         <div className="marquee-track">
-          <span>{t("hero.marquee")}</span>
-          <span>{t("hero.marquee")}</span>
+          <span>{renderMarquee()}</span>
+          <span>{renderMarquee()}</span>
         </div>
       </div>
     </>

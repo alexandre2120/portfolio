@@ -30,7 +30,15 @@
     "ctaPrimary": "Get in touch",
     "ctaSecondary": "View selected work",
     "stampBadge": "Lisbon · 2026",
-    "marquee": "Full-Stack ✦ AI Engineering ✦ Workflow Automation ✦ Next.js ✦ Operations ✦ Founder ✦ Lisbon ✦"
+    "marqueeItems": [
+      "Full-Stack",
+      "AI Engineering",
+      "Workflow Automation",
+      "Next.js",
+      "Operations",
+      "Founder",
+      "Lisbon"
+    ]
   },
   "about": {
     "label": "About",

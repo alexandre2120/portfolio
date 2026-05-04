@@ -30,7 +30,15 @@
     "ctaPrimary": "Entre em contato",
     "ctaSecondary": "Ver projetos selecionados",
     "stampBadge": "Lisboa · 2026",
-    "marquee": "Full-Stack ✦ Engenharia de IA ✦ Automação de Workflows ✦ Next.js ✦ Operações ✦ Founder ✦ Lisboa ✦"
+    "marqueeItems": [
+      "Full-Stack",
+      "Engenharia de IA",
+      "Automação de Workflows",
+      "Next.js",
+      "Operações",
+      "Founder",
+      "Lisboa"
+    ]
   },
   "about": {
     "label": "Sobre",
