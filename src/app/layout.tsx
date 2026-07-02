@@ -34,10 +34,10 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     template: "%s - Alexandre Jaques",
-    default: "Alexandre Jaques - Full-Stack Developer",
+    default: "Alexandre Jaques - AI Integration Engineer",
   },
   description:
-    "Full-Stack Developer based in Lisbon, specializing in JavaScript, React, Next.js, AI coding, and workflow automation.",
+    "AI Integration Engineer based in Lisbon. LLM pipelines, API integrations, and workflow automation with n8n, Python, and TypeScript.",
   icons: {
     icon: [
       {
