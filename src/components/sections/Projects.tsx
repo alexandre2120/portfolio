@@ -21,7 +21,7 @@ const PROJECTS: Project[] = [
         BunnieMonki <em>Marketplace</em>
       </>
     ),
-    tags: ["Next.js", "Fastify", "Flutter", "PostgreSQL"],
+    tags: ["Next.js", "Fastify", "TypeScript", "PostgreSQL"],
     img: "/images/projects/bunniemonki.png",
   },
   {
@@ -52,17 +52,6 @@ const PROJECTS: Project[] = [
     ),
     tags: ["Next.js", "ChatGuru API", "Automation", "Vercel"],
     img: "/images/projects/chatguru-tool.png",
-  },
-  {
-    num: "/05",
-    href: "https://agency.bunniemonki.com",
-    title: (
-      <>
-        BunnieMonki <em>Agency</em>
-      </>
-    ),
-    tags: ["Next.js", "Branding", "Integrations"],
-    img: "/images/projects/agency.png",
   },
 ]
 

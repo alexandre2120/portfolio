@@ -24,7 +24,7 @@ function getSignatureHTML(photoUrl: string): string {
         Alexandre Jaques
       </p>
       <p style="margin:0 0 8px 0;font-size:13px;color:#52525b;">
-        Full-Stack Developer &amp; Founder
+        AI Integration Engineer
       </p>
       <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
         <tr>
@@ -38,7 +38,7 @@ function getSignatureHTML(photoUrl: string): string {
             <a href="https://github.com/alexandre2120" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">GitHub</a>
           </td>
           <td style="padding:0 10px;border-left:1px solid #d4d4d8;">
-            <a href="https://www.linkedin.com/in/alexandre-jaques-b66249135/" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/alexandrejaques/" style="text-decoration:none;font-size:12px;color:#0d9488;font-weight:500;">LinkedIn</a>
           </td>
         </tr>
       </table>

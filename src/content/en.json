@@ -15,22 +15,22 @@
     "statusValue": "Available for work",
     "firstName": "Alexandre",
     "lastName": "Jaques",
-    "ledePrefix": "Full-stack developer based in Lisbon. I build ",
-    "ledeEm": "scalable products",
-    "ledeSuffix": ", AI workflows, and the unsexy plumbing that makes them ship.",
+    "ledePrefix": "AI Integration Engineer based in Lisbon. I connect LLMs to ",
+    "ledeEm": "real business systems",
+    "ledeSuffix": ": API integrations, RAG pipelines, and workflow automation.",
     "currentlyLabel": "Currently",
-    "currentlyLine1": "Director, ChatGuru",
+    "currentlyLine1": "Building AI integrations & products",
     "currentlyLine2": "Studying AI & ML Engineering",
     "stackLabel": "Stack",
-    "stackLine1": "JavaScript · TypeScript · React · Next.js",
-    "stackLine2": "Python · n8n · Make · Supabase",
+    "stackLine1": "LLM APIs · AI Agents · RAG · n8n · Make",
+    "stackLine2": "Python · TypeScript · Next.js · Supabase",
     "availableLabel": "Available",
-    "availableLine1": "Selective freelance & collaborations",
-    "availableLine2": "Q2 / Q3 2026",
+    "availableLine1": "Open to full-time AI engineering roles",
+    "availableLine2": "Remote (EU/US) or Lisbon",
     "ctaPrimary": "Get in touch",
     "ctaSecondary": "View selected work",
     "stampBadge": "Lisbon · 2026",
-    "marquee": "Full-Stack ✦ AI Engineering ✦ Workflow Automation ✦ Next.js ✦ Operations ✦ Founder ✦ Lisbon ✦"
+    "marquee": "AI Integration ✦ LLM Pipelines ✦ Workflow Automation ✦ API Integrations ✦ Operations ✦ Founder ✦ Lisbon ✦"
   },
   "about": {
     "label": "About",
@@ -44,8 +44,8 @@
     "ledePrefix": "Six years at a SaaS startup taught me that ",
     "ledeEm": "shipping",
     "ledeSuffix": " is just the beginning. What compounds is the system around it.",
-    "p1": "I'm a Full-Stack Developer based in Lisbon with an unusual combination: 6+ years of Operations leadership at ChatGuru, founding IntegraNinja to design automation systems for clients in legal, retail, healthcare, and real estate, and hands-on engineering across the React/Next.js stack.",
-    "p2": "Lately I've been deep in AI Engineering (Claude Code, LLM APIs, agentic workflows) and integrating them into the kind of operational backbones I spent years optimizing by hand. Currently studying AI & Machine Learning Engineering, focused on building scalable, useful systems.",
+    "p1": "I'm an AI Integration Engineer based in Lisbon with an unusual combination: a continuous six-year journey at ChatGuru, growing from first Customer Success hire to Director, plus IntegraNinja, a part-time integration consultancy I founded and ran alongside it, delivering automation for clients in legal, retail, healthcare, and real estate.",
+    "p2": "My work sits where LLMs meet real business systems: API integrations, RAG pipelines, multi-agent workflows, and the operational backbones I spent years optimizing by hand. Currently studying AI & Machine Learning Engineering, focused on building scalable, useful systems.",
     "stat1Label": "Years in SaaS",
     "stat2Label": "Manual work cut",
     "stat3Label": "Active products",
@@ -104,37 +104,37 @@
   },
   "experience": {
     "label": "Experience",
-    "headlinePrefix": "From CS to ",
-    "headlineEm": "CEO",
+    "headlinePrefix": "From first hire to ",
+    "headlineEm": "Director",
     "headlineSuffix": "and back to code.",
-    "metaPeriod": "2019 → present",
-    "metaYears": "7 years",
+    "metaPeriod": "2019 → 2025",
+    "metaYears": "6+ years",
     "present": "Present",
     "roles": [
       {
-        "date": "2025 → Present",
+        "date": "Jan 2025 → Nov 2025",
         "role": "Director",
         "company": "ChatGuru",
-        "desc": "Strategic leadership driving digital transformation and operational excellence across the organization.",
+        "desc": "Led company strategy across product, operations, and engineering. Owned the AI chatbot roadmap: conversation flows, prompt strategies, and integration architecture with third-party platforms in production.",
         "tag": "Leadership"
       },
       {
         "date": "2021 → 2025",
-        "role": "CEO & Founder",
-        "company": "IntegraNinja",
-        "desc": "Founded a service company specialized in automation and API integrations. Delivered projects across legal, retail, healthcare, real estate, and professional services using n8n, Make, Next.js, and Python microservices.",
+        "role": "Founder",
+        "company": "IntegraNinja (part-time, alongside ChatGuru)",
+        "desc": "Independent integration consultancy run in parallel with my role at ChatGuru. Architected automation and integration solutions with n8n, Make, Python, and REST APIs for 15+ clients across legal, retail, healthcare, real estate, and professional services, cutting manual effort by 60%.",
         "tag": "Founder"
       },
       {
-        "date": "2020 → 2025",
+        "date": "Nov 2020 → Jan 2025",
         "role": "Head of Operations",
         "company": "ChatGuru",
-        "desc": "Led cross-functional teams in process optimization, AI integration, and scaling operations for the SaaS platform. Reduced manual processes by 60%+ through automation.",
+        "desc": "Led cross-functional teams of 15+ people. Designed API integration workflows for client onboarding automation, cutting time-to-value by 40%. Drove automation that reduced manual work by 60%.",
         "tag": "Operations"
       },
       {
         "date": "2020",
-        "role": "Manager of Customer Success",
+        "role": "Customer Success Manager",
         "company": "ChatGuru",
         "desc": "Built and managed the Customer Success team. Established processes for onboarding, retention, and expansion.",
         "tag": "CS"
@@ -149,52 +149,36 @@
     ]
   },
   "skills": {
-    "label": "Skills",
-    "headlinePrefix": "What I ",
-    "headlineEm": "do",
-    "headlineSuffix": "well, by area.",
-    "metaCategories": "04 categories",
-    "metaDisciplines": "17 disciplines",
-    "categories": [
+    "label": "Case Studies",
+    "headlinePrefix": "How I ",
+    "headlineEm": "solve",
+    "headlineSuffix": "real problems.",
+    "metaCategories": "03 case studies",
+    "metaDisciplines": "Problem · Architecture · Result",
+    "problemLabel": "Problem",
+    "architectureLabel": "Architecture",
+    "resultLabel": "Result",
+    "cases": [
       {
         "num": "/01",
-        "title": "Development",
-        "rows": [
-          { "name": "JavaScript / TypeScript", "pct": 85 },
-          { "name": "React & Next.js", "pct": 85 },
-          { "name": "RESTful APIs", "pct": 95 },
-          { "name": "Supabase / MongoDB", "pct": 90 }
-        ]
+        "title": "Semantic search over support tickets",
+        "problem": "An IT services client had years of resolutions locked inside Freshservice tickets. Agents kept solving the same issues from scratch.",
+        "architecture": "RAG pipeline with Freshservice, Supabase pgvector, and n8n sync workflows. Embeddings on ticket resolutions, retrieval wired into the agent workflow.",
+        "result": "Past resolutions surfaced instantly during triage, as part of an automation program that cut manual effort by 60%."
       },
       {
         "num": "/02",
-        "title": "AI & Automation",
-        "rows": [
-          { "name": "Claude Code", "pct": 95 },
-          { "name": "AI / LLM APIs", "pct": 95 },
-          { "name": "n8n / Make", "pct": 95 },
-          { "name": "Python Scripting", "pct": 90 }
-        ]
+        "title": "AI on the WhatsApp API: JIPPfy",
+        "problem": "Small businesses answering the same WhatsApp questions by hand, all day, every day.",
+        "architecture": "Next.js product on the WhatsApp API with LLM-driven agent workflows (GPT and Claude APIs) handling first-line conversations.",
+        "result": "Automated first-line replies in production. Live at jippfy.pt."
       },
       {
         "num": "/03",
-        "title": "Infrastructure",
-        "rows": [
-          { "name": "Cloud Servers", "pct": 80 },
-          { "name": "Docker / K8s", "pct": 65 },
-          { "name": "Workflow Automation", "pct": 95 },
-          { "name": "Data Analysis", "pct": 90 }
-        ]
-      },
-      {
-        "num": "/04",
-        "title": "Leadership",
-        "rows": [
-          { "name": "Team Management", "pct": 95 },
-          { "name": "Strategic Planning", "pct": 85 },
-          { "name": "Performance Metrics", "pct": 90 },
-          { "name": "Process Optimization", "pct": 95 }
-        ]
+        "title": "CRM / ERP integration delivery",
+        "problem": "Client data siloed across HubSpot, Pipedrive, Salesforce, SAP, and custom APIs, with teams re-typing data between systems.",
+        "architecture": "n8n and Make workflows, REST APIs and webhooks, plus Python microservices, owning the full lifecycle from requirements to delivery.",
+        "result": "15+ client projects delivered across legal, retail, healthcare, real estate, and professional services, cutting manual work by 60%."
       }
     ]
   },
@@ -225,13 +209,12 @@
     "expires": "Expires"
   },
   "contact": {
-    "available": "Available for work · Q2 / Q3 2026",
+    "available": "Open to full-time roles · Remote (EU/US) or Lisbon",
     "headlinePrefix": "Let's ",
     "headlineEm": "build",
     "headlineSuffix": "something good.",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "instagram": "Instagram",
     "email": "Email"
   },
   "footer": {

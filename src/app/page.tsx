@@ -1,27 +1,5 @@
-import { Hero } from "@/components/sections/Hero"
-import { About } from "@/components/sections/About"
-import { Projects } from "@/components/sections/Projects"
-import { Mockups } from "@/components/sections/Mockups"
-import { Experience } from "@/components/sections/Experience"
-import { Skills } from "@/components/sections/Skills"
-import { Testimonials } from "@/components/sections/Testimonials"
-import { Contact } from "@/components/sections/Contact"
-import { RevealObserver } from "@/components/RevealObserver"
+import { PortfolioHome } from "@/components/portfolio/PortfolioHome"
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Projects />
-      <div className="hidden md:block">
-        <Mockups />
-      </div>
-      <Experience />
-      <Skills />
-      <Testimonials />
-      <Contact />
-      <RevealObserver />
-    </>
-  )
+  return <PortfolioHome />
 }

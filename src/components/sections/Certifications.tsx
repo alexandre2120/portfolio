@@ -33,21 +33,6 @@ type CertGroup = {
 
 const certGroups: CertGroup[] = [
   {
-    provider: "Duolingo",
-    color: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
-    certs: [
-      {
-        name: {
-          en: "English Proficiency Certificate",
-          pt: "Certificado de Proficiência em Inglês",
-        },
-        provider: "Duolingo English Test",
-        date: "Jan 2026",
-        expires: "Jan 2028",
-      },
-    ],
-  },
-  {
     provider: "G4",
     color: "bg-orange-500/10 text-orange-600 dark:text-orange-400",
     certs: [

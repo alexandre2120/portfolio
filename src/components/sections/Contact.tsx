@@ -40,18 +40,11 @@ export function Contact() {
               {t("contact.github")} <span className="arr">↗</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/alexandre-jaques-b66249135/"
+              href="https://www.linkedin.com/in/alexandrejaques/"
               target="_blank"
               rel="noopener noreferrer"
             >
               {t("contact.linkedin")} <span className="arr">↗</span>
-            </a>
-            <a
-              href="https://www.instagram.com/alexandrejaquees/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("contact.instagram")} <span className="arr">↗</span>
             </a>
             <a href="mailto:alexandrjaques@gmail.com">
               {t("contact.email")} <span className="arr">↗</span>

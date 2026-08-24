@@ -15,22 +15,22 @@
     "statusValue": "Disponível para trabalhar",
     "firstName": "Alexandre",
     "lastName": "Jaques",
-    "ledePrefix": "Desenvolvedor full-stack baseado em Lisboa. Construo ",
-    "ledeEm": "produtos escaláveis",
-    "ledeSuffix": ", workflows de IA e a infraestrutura silenciosa que faz tudo isso entregar.",
+    "ledePrefix": "AI Integration Engineer em Lisboa. Ligo LLMs a ",
+    "ledeEm": "sistemas reais de negócio",
+    "ledeSuffix": ": integrações de API, pipelines RAG e automação de workflows.",
     "currentlyLabel": "Atualmente",
-    "currentlyLine1": "Diretor, ChatGuru",
+    "currentlyLine1": "Construindo integrações e produtos de IA",
     "currentlyLine2": "Estudando Engenharia de IA & ML",
     "stackLabel": "Stack",
-    "stackLine1": "JavaScript · TypeScript · React · Next.js",
-    "stackLine2": "Python · n8n · Make · Supabase",
+    "stackLine1": "APIs de LLM · Agentes de IA · RAG · n8n · Make",
+    "stackLine2": "Python · TypeScript · Next.js · Supabase",
     "availableLabel": "Disponível",
-    "availableLine1": "Freelance & colaborações seletivas",
-    "availableLine2": "Q2 / Q3 2026",
+    "availableLine1": "Aberto a vagas full-time em engenharia de IA",
+    "availableLine2": "Remoto (EU/US) ou Lisboa",
     "ctaPrimary": "Entre em contato",
     "ctaSecondary": "Ver projetos selecionados",
     "stampBadge": "Lisboa · 2026",
-    "marquee": "Full-Stack ✦ Engenharia de IA ✦ Automação de Workflows ✦ Next.js ✦ Operações ✦ Founder ✦ Lisboa ✦"
+    "marquee": "AI Integration ✦ Pipelines de LLM ✦ Automação de Workflows ✦ Integrações de API ✦ Operações ✦ Founder ✦ Lisboa ✦"
   },
   "about": {
     "label": "Sobre",
@@ -44,8 +44,8 @@
     "ledePrefix": "Seis anos numa startup SaaS me ensinaram que ",
     "ledeEm": "entregar",
     "ledeSuffix": " é só o começo. O que compõe valor é o sistema ao redor.",
-    "p1": "Sou Desenvolvedor Full-Stack baseado em Lisboa, com uma combinação rara: 6+ anos de liderança em Operações na ChatGuru, fundando a IntegraNinja para projetar sistemas de automação para clientes nos setores jurídico, varejo, saúde e imobiliário, e engenharia hands-on no stack React/Next.js.",
-    "p2": "Recentemente tenho mergulhado em Engenharia de IA (Claude Code, APIs de LLM, workflows agentivos) e integrando isso aos backbones operacionais que passei anos otimizando manualmente. Atualmente estudo Engenharia de IA & Machine Learning, focado em construir sistemas escaláveis e úteis.",
+    "p1": "Sou AI Integration Engineer em Lisboa com uma combinação incomum: uma trajetória contínua de seis anos na ChatGuru, de primeiro contratado de Customer Success a Director, mais a IntegraNinja, consultoria de integrações part-time que fundei e geri em paralelo, entregando automação para clientes de jurídico, varejo, saúde e imobiliário.",
+    "p2": "O meu trabalho fica onde os LLMs encontram sistemas reais de negócio: integrações de API, pipelines RAG, workflows multiagente e as espinhas dorsais operacionais que passei anos otimizando à mão. Atualmente estudando Engenharia de IA & Machine Learning, focado em construir sistemas escaláveis e úteis.",
     "stat1Label": "Anos em SaaS",
     "stat2Label": "Trabalho manual cortado",
     "stat3Label": "Produtos ativos",
@@ -104,97 +104,81 @@
   },
   "experience": {
     "label": "Experiência",
-    "headlinePrefix": "De CS a ",
-    "headlineEm": "CEO",
+    "headlinePrefix": "De primeiro contratado a ",
+    "headlineEm": "Director",
     "headlineSuffix": "e de volta ao código.",
-    "metaPeriod": "2019 → presente",
-    "metaYears": "7 anos",
+    "metaPeriod": "2019 → 2025",
+    "metaYears": "6+ anos",
     "present": "Presente",
     "roles": [
       {
-        "date": "2025 → Presente",
-        "role": "Diretor",
+        "date": "jan 2025 → nov 2025",
+        "role": "Director",
         "company": "ChatGuru",
-        "desc": "Liderança estratégica conduzindo a transformação digital e a excelência operacional em toda a organização.",
+        "desc": "Liderou a estratégia da empresa em produto, operações e engenharia. Responsável pelo roadmap do chatbot de IA: fluxos conversacionais, estratégias de prompt e arquitetura de integração com plataformas externas em produção.",
         "tag": "Liderança"
       },
       {
         "date": "2021 → 2025",
-        "role": "CEO & Fundador",
-        "company": "IntegraNinja",
-        "desc": "Fundei uma empresa de serviços especializada em automação e integrações de API. Entreguei projetos nos setores jurídico, varejo, saúde, imobiliário e serviços profissionais usando n8n, Make, Next.js e microsserviços Python.",
+        "role": "Founder",
+        "company": "IntegraNinja (part-time, em paralelo à ChatGuru)",
+        "desc": "Consultoria independente de integrações gerida em paralelo ao meu papel na ChatGuru. Arquitetou soluções de automação e integração com n8n, Make, Python e REST APIs para mais de 15 clientes de jurídico, varejo, saúde, imobiliário e serviços profissionais, reduzindo o esforço manual em 60%.",
         "tag": "Founder"
       },
       {
-        "date": "2020 → 2025",
-        "role": "Head de Operações",
+        "date": "nov 2020 → jan 2025",
+        "role": "Head of Operations",
         "company": "ChatGuru",
-        "desc": "Liderei equipes multifuncionais em otimização de processos, integração de IA e escalonamento das operações da plataforma SaaS. Reduzi processos manuais em 60%+ através de automação.",
+        "desc": "Liderou equipes multifuncionais com mais de 15 pessoas. Desenhou workflows de integração de APIs para automação de onboarding, reduzindo o time-to-value em 40%. Conduziu automações que reduziram o trabalho manual em 60%.",
         "tag": "Operações"
       },
       {
         "date": "2020",
-        "role": "Gerente de Customer Success",
+        "role": "Customer Success Manager",
         "company": "ChatGuru",
-        "desc": "Construí e gerenciei a equipe de Customer Success. Estabeleci processos de onboarding, retenção e expansão.",
+        "desc": "Construiu e geriu a equipe de Customer Success. Estabeleceu processos de onboarding, retenção e expansão.",
         "tag": "CS"
       },
       {
         "date": "2019 → 2020",
-        "role": "Analista de Customer Success",
+        "role": "Customer Success Analyst",
         "company": "ChatGuru",
-        "desc": "Primeiro contratado de CS. Cuidei do onboarding, suporte e workflows de sucesso do cliente desde o zero.",
-        "tag": "Primeira contratação"
+        "desc": "Primeiro contratado de CS. Cuidou de onboarding, suporte e workflows de sucesso do cliente desde o início.",
+        "tag": "Primeiro contratado"
       }
     ]
   },
   "skills": {
-    "label": "Habilidades",
-    "headlinePrefix": "O que ",
-    "headlineEm": "faço",
-    "headlineSuffix": "bem, por área.",
-    "metaCategories": "04 categorias",
-    "metaDisciplines": "17 disciplinas",
-    "categories": [
+    "label": "Case Studies",
+    "headlinePrefix": "Como eu ",
+    "headlineEm": "resolvo",
+    "headlineSuffix": "problemas reais.",
+    "metaCategories": "03 case studies",
+    "metaDisciplines": "Problema · Arquitetura · Resultado",
+    "problemLabel": "Problema",
+    "architectureLabel": "Arquitetura",
+    "resultLabel": "Resultado",
+    "cases": [
       {
         "num": "/01",
-        "title": "Desenvolvimento",
-        "rows": [
-          { "name": "JavaScript / TypeScript", "pct": 85 },
-          { "name": "React & Next.js", "pct": 85 },
-          { "name": "APIs RESTful", "pct": 95 },
-          { "name": "Supabase / MongoDB", "pct": 90 }
-        ]
+        "title": "Busca semântica em tickets de suporte",
+        "problem": "Um cliente de serviços de TI tinha anos de resoluções presas em tickets do Freshservice. Os agentes resolviam os mesmos problemas do zero.",
+        "architecture": "Pipeline RAG com Freshservice, Supabase pgvector e workflows de sincronização em n8n. Embeddings das resoluções, com retrieval ligado ao fluxo dos agentes.",
+        "result": "Resoluções antigas passaram a aparecer na triagem, num programa de automação que reduziu o esforço manual em 60%."
       },
       {
         "num": "/02",
-        "title": "IA & Automação",
-        "rows": [
-          { "name": "Claude Code", "pct": 95 },
-          { "name": "APIs de IA / LLM", "pct": 95 },
-          { "name": "n8n / Make", "pct": 95 },
-          { "name": "Scripts Python", "pct": 90 }
-        ]
+        "title": "IA na WhatsApp API: JIPPfy",
+        "problem": "Pequenos negócios respondendo às mesmas perguntas no WhatsApp, à mão, o dia inteiro.",
+        "architecture": "Produto em Next.js sobre a WhatsApp API com workflows de agentes LLM (APIs GPT e Claude) na primeira linha de atendimento.",
+        "result": "Respostas de primeira linha automatizadas em produção. No ar em jippfy.pt."
       },
       {
         "num": "/03",
-        "title": "Infraestrutura",
-        "rows": [
-          { "name": "Servidores Cloud", "pct": 80 },
-          { "name": "Docker / K8s", "pct": 65 },
-          { "name": "Automação de Workflows", "pct": 95 },
-          { "name": "Análise de Dados", "pct": 90 }
-        ]
-      },
-      {
-        "num": "/04",
-        "title": "Liderança",
-        "rows": [
-          { "name": "Gestão de Equipes", "pct": 95 },
-          { "name": "Planejamento Estratégico", "pct": 85 },
-          { "name": "Métricas de Performance", "pct": 90 },
-          { "name": "Otimização de Processos", "pct": 95 }
-        ]
+        "title": "Entrega de integrações CRM / ERP",
+        "problem": "Dados de clientes em silos entre HubSpot, Pipedrive, Salesforce, SAP e APIs customizadas, com equipes redigitando dados entre sistemas.",
+        "architecture": "Workflows em n8n e Make, REST APIs e webhooks, mais microserviços em Python, cuidando do ciclo completo, dos requisitos à entrega.",
+        "result": "Mais de 15 projetos entregues em jurídico, varejo, saúde, imobiliário e serviços profissionais, reduzindo o trabalho manual em 60%."
       }
     ]
   },
@@ -225,13 +209,12 @@
     "expires": "Expira"
   },
   "contact": {
-    "available": "Disponível para trabalhar · Q2 / Q3 2026",
+    "available": "Aberto a vagas full-time · Remoto (EU/US) ou Lisboa",
     "headlinePrefix": "Vamos ",
     "headlineEm": "construir",
     "headlineSuffix": "algo bom.",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "instagram": "Instagram",
     "email": "Email"
   },
   "footer": {
