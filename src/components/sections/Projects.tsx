@@ -10,29 +10,42 @@ type Project = {
   title: React.ReactNode
   tags: string[]
   img: string
+  caseStudy?: boolean
 }
 
 const PROJECTS: Project[] = [
   {
     num: "/01",
+    href: "/projects/mensagemz",
+    title: (
+      <>
+        Mensagemz <em>AI Platform</em>
+      </>
+    ),
+    tags: ["Next.js", "Fastify", "BullMQ", "Supabase", "LLM", "Docker"],
+    img: "/images/projects/mensagemz.png",
+    caseStudy: true,
+  },
+  {
+    num: "/02",
     href: "https://bunniemonki.com",
     title: (
       <>
         BunnieMonki <em>Marketplace</em>
       </>
     ),
-    tags: ["Next.js", "Fastify", "TypeScript", "PostgreSQL"],
+    tags: ["Next.js", "Fastify", "Flutter", "PostgreSQL"],
     img: "/images/projects/bunniemonki.png",
   },
   {
-    num: "/02",
+    num: "/03",
     href: "https://www.jippfy.pt",
     title: <>JIPPfy</>,
     tags: ["Next.js", "AI", "WhatsApp API", "Automation"],
     img: "/images/projects/jippfy.png",
   },
   {
-    num: "/03",
+    num: "/04",
     href: "https://www.theskinaesthetic.pt",
     title: (
       <>
@@ -43,7 +56,7 @@ const PROJECTS: Project[] = [
     img: "/images/projects/theskinaesthetic.png",
   },
   {
-    num: "/04",
+    num: "/05",
     href: "https://cgtools.vercel.app",
     title: (
       <>
@@ -52,6 +65,17 @@ const PROJECTS: Project[] = [
     ),
     tags: ["Next.js", "ChatGuru API", "Automation", "Vercel"],
     img: "/images/projects/chatguru-tool.png",
+  },
+  {
+    num: "/06",
+    href: "https://agency.bunniemonki.com",
+    title: (
+      <>
+        BunnieMonki <em>Agency</em>
+      </>
+    ),
+    tags: ["Next.js", "Branding", "Integrations"],
+    img: "/images/projects/agency.png",
   },
 ]
 
@@ -115,8 +139,8 @@ export function Projects() {
             <a
               key={p.href}
               href={p.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={p.caseStudy ? undefined : "_blank"}
+              rel={p.caseStudy ? undefined : "noopener noreferrer"}
               className="proj"
             >
               <div className="p-num">{p.num}</div>
@@ -127,7 +151,8 @@ export function Projects() {
                 ))}
               </div>
               <div className="p-meta">
-                {t("projects.live")} <span className="arrow">↗</span>
+                {p.caseStudy ? t("projects.caseStudy") : t("projects.live")}{" "}
+                <span className="arrow">{p.caseStudy ? "→" : "↗"}</span>
               </div>
               <div className="preview">
                 <Image src={p.img} alt="" width={380} height={260} />

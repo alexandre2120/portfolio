@@ -1,225 +1,226 @@
 {
-  "nav": {
-    "about": "About",
-    "work": "Work",
-    "mockups": "Mockups",
-    "experience": "Experience",
-    "skills": "Skills",
-    "contact": "Contact",
-    "articles": "Articles"
-  },
-  "hero": {
-    "indexLabel": "Index/01",
-    "portfolioLabel": "Portfolio · 2026",
-    "statusLabel": "Status",
-    "statusValue": "Available for work",
-    "firstName": "Alexandre",
-    "lastName": "Jaques",
-    "ledePrefix": "AI Integration Engineer based in Lisbon. I connect LLMs to ",
-    "ledeEm": "real business systems",
-    "ledeSuffix": ": API integrations, RAG pipelines, and workflow automation.",
-    "currentlyLabel": "Currently",
-    "currentlyLine1": "Building AI integrations & products",
-    "currentlyLine2": "Studying AI & ML Engineering",
-    "stackLabel": "Stack",
-    "stackLine1": "LLM APIs · AI Agents · RAG · n8n · Make",
-    "stackLine2": "Python · TypeScript · Next.js · Supabase",
-    "availableLabel": "Available",
-    "availableLine1": "Open to full-time AI engineering roles",
-    "availableLine2": "Remote (EU/US) or Lisbon",
-    "ctaPrimary": "Get in touch",
-    "ctaSecondary": "View selected work",
-    "stampBadge": "Lisbon · 2026",
-    "marquee": "AI Integration ✦ LLM Pipelines ✦ Workflow Automation ✦ API Integrations ✦ Operations ✦ Founder ✦ Lisbon ✦"
-  },
-  "about": {
-    "label": "About",
-    "headlinePrefix": "An engineer",
-    "headlineMiddle": "who ",
-    "headlineEm": "runs ops.",
-    "metaSection": "Section 01 / 05",
-    "metaUpdated": "Last updated · 04.05.26",
-    "tagName": "Alexandre Jaques · Lisbon",
-    "tagEst": "EST. 2019 · 6Y",
-    "ledePrefix": "Six years at a SaaS startup taught me that ",
-    "ledeEm": "shipping",
-    "ledeSuffix": " is just the beginning. What compounds is the system around it.",
-    "p1": "I'm an AI Integration Engineer based in Lisbon with an unusual combination: a continuous six-year journey at ChatGuru, growing from first Customer Success hire to Director, plus IntegraNinja, a part-time integration consultancy I founded and ran alongside it, delivering automation for clients in legal, retail, healthcare, and real estate.",
-    "p2": "My work sits where LLMs meet real business systems: API integrations, RAG pipelines, multi-agent workflows, and the operational backbones I spent years optimizing by hand. Currently studying AI & Machine Learning Engineering, focused on building scalable, useful systems.",
-    "stat1Label": "Years in SaaS",
-    "stat2Label": "Manual work cut",
-    "stat3Label": "Active products",
-    "stat4Label": "Workflows shipped"
-  },
-  "projects": {
-    "label": "Selected Work",
-    "headlinePrefix": "Things I've ",
-    "headlineEm": "built",
-    "headlineSuffix": "and shipped.",
-    "metaYears": "2021 → 2026",
-    "metaCount": "05 projects",
-    "live": "Live"
-  },
-  "mockups": {
-    "label": "Mockups",
-    "headlinePrefix": "Concepts & ",
-    "headlineEm": "explorations.",
-    "metaDecks": "02 decks",
-    "metaScreens": "17 screens",
-    "stackLabel": "Stack",
-    "scopeLabel": "Scope",
-    "padel": {
-      "title": "Padel",
-      "titleEm": "App",
-      "stack": "Next.js · React Native · Supabase",
-      "scope": "3 profiles · 9 screens",
-      "slides": [
-        "01 · Overview",
-        "02 · Player · Feed",
-        "03 · Club · Dashboard",
-        "04 · Club · Schedule",
-        "05 · Auto Mix",
-        "06 · Organizer · Mix",
-        "07 · Organizer · Events",
-        "08 · Community",
-        "09 · Invite Players"
-      ]
+    "nav": {
+          "about": "About",
+          "work": "Work",
+          "mockups": "Mockups",
+          "experience": "Experience",
+          "skills": "Skills",
+          "contact": "Contact",
+          "articles": "Articles"
     },
-    "daillo": {
-      "title": "Daillo",
-      "titleEm": "iOS",
-      "stack": "Expo · Supabase · GPT-4o",
-      "scope": "iOS · 7 screens",
-      "slides": [
-        "00 · Cover",
-        "01 · Chat with Pilly",
-        "02 · Generated Stack",
-        "03 · Today · Checklist",
-        "04 · Daily Check-in",
-        "05 · Supplement Detail",
-        "06 · Chat · History",
-        "07 · History"
-      ]
+    "hero": {
+          "indexLabel": "Index/01",
+          "portfolioLabel": "Portfolio · 2026",
+          "statusLabel": "Status",
+          "statusValue": "Available for work",
+          "firstName": "Alexandre",
+          "lastName": "Jaques",
+          "ledePrefix": "AI Integration Engineer based in Lisbon. I connect LLMs to ",
+          "ledeEm": "real business systems",
+          "ledeSuffix": ": API integrations, RAG pipelines, and workflow automation.",
+          "currentlyLabel": "Currently",
+          "currentlyLine1": "Building AI integrations & products",
+          "currentlyLine2": "Studying AI & ML Engineering",
+          "stackLabel": "Stack",
+          "stackLine1": "LLM APIs · AI Agents · RAG · n8n · Make",
+          "stackLine2": "Python · TypeScript · Next.js · Supabase",
+          "availableLabel": "Available",
+          "availableLine1": "Open to full-time AI engineering roles",
+          "availableLine2": "Remote (EU/US) or Lisbon",
+          "ctaPrimary": "Get in touch",
+          "ctaSecondary": "View selected work",
+          "stampBadge": "Lisbon · 2026",
+          "marquee": "AI Integration ✦ LLM Pipelines ✦ Workflow Automation ✦ API Integrations ✦ Operations ✦ Founder ✦ Lisbon ✦"
+    },
+    "about": {
+          "label": "About",
+          "headlinePrefix": "An engineer",
+          "headlineMiddle": "who ",
+          "headlineEm": "runs ops.",
+          "metaSection": "Section 01 / 05",
+          "metaUpdated": "Last updated · 04.05.26",
+          "tagName": "Alexandre Jaques · Lisbon",
+          "tagEst": "EST. 2019 · 6Y",
+          "ledePrefix": "Six years at a SaaS startup taught me that ",
+          "ledeEm": "shipping",
+          "ledeSuffix": " is just the beginning. What compounds is the system around it.",
+          "p1": "I'm an AI Integration Engineer based in Lisbon with an unusual combination: a continuous six-year journey at ChatGuru, growing from first Customer Success hire to Director, plus IntegraNinja, a part-time integration consultancy I founded and ran alongside it, delivering automation for clients in legal, retail, healthcare, and real estate.",
+          "p2": "My work sits where LLMs meet real business systems: API integrations, RAG pipelines, multi-agent workflows, and the operational backbones I spent years optimizing by hand. Currently studying AI & Machine Learning Engineering, focused on building scalable, useful systems.",
+          "stat1Label": "Years in SaaS",
+          "stat2Label": "Manual work cut",
+          "stat3Label": "Active products",
+          "stat4Label": "Workflows shipped"
+    },
+    "projects": {
+          "label": "Selected Work",
+          "headlinePrefix": "Things I've ",
+          "headlineEm": "built",
+          "headlineSuffix": "and shipped.",
+          "metaYears": "2021 → 2026",
+          "metaCount": "06 projects",
+          "live": "Live",
+          "caseStudy": "Case study"
+    },
+    "mockups": {
+          "label": "Mockups",
+          "headlinePrefix": "Concepts & ",
+          "headlineEm": "explorations.",
+          "metaDecks": "02 decks",
+          "metaScreens": "17 screens",
+          "stackLabel": "Stack",
+          "scopeLabel": "Scope",
+          "padel": {
+                  "title": "Padel",
+                  "titleEm": "App",
+                  "stack": "Next.js · React Native · Supabase",
+                  "scope": "3 profiles · 9 screens",
+                  "slides": [
+                            "01 · Overview",
+                            "02 · Player · Feed",
+                            "03 · Club · Dashboard",
+                            "04 · Club · Schedule",
+                            "05 · Auto Mix",
+                            "06 · Organizer · Mix",
+                            "07 · Organizer · Events",
+                            "08 · Community",
+                            "09 · Invite Players"
+                  ]
+          },
+          "daillo": {
+                  "title": "Daillo",
+                  "titleEm": "iOS",
+                  "stack": "Expo · Supabase · GPT-4o",
+                  "scope": "iOS · 7 screens",
+                  "slides": [
+                            "00 · Cover",
+                            "01 · Chat with Pilly",
+                            "02 · Generated Stack",
+                            "03 · Today · Checklist",
+                            "04 · Daily Check-in",
+                            "05 · Supplement Detail",
+                            "06 · Chat · History",
+                            "07 · History"
+                  ]
+          }
+    },
+    "experience": {
+          "label": "Experience",
+          "headlinePrefix": "From first hire to ",
+          "headlineEm": "Director",
+          "headlineSuffix": "and back to code.",
+          "metaPeriod": "2019 → 2025",
+          "metaYears": "6+ years",
+          "present": "Present",
+          "roles": [
+                  {
+                            "date": "Jan 2025 → Nov 2025",
+                            "role": "Director",
+                            "company": "ChatGuru",
+                            "desc": "Led company strategy across product, operations, and engineering. Owned the AI chatbot roadmap: conversation flows, prompt strategies, and integration architecture with third-party platforms in production.",
+                            "tag": "Leadership"
+                  },
+                  {
+                            "date": "2021 → 2025",
+                            "role": "Founder",
+                            "company": "IntegraNinja (part-time, alongside ChatGuru)",
+                            "desc": "Independent integration consultancy run in parallel with my role at ChatGuru. Architected automation and integration solutions with n8n, Make, Python, and REST APIs for 15+ clients across legal, retail, healthcare, real estate, and professional services, cutting manual effort by 60%.",
+                            "tag": "Founder"
+                  },
+                  {
+                            "date": "Nov 2020 → Jan 2025",
+                            "role": "Head of Operations",
+                            "company": "ChatGuru",
+                            "desc": "Led cross-functional teams of 15+ people. Designed API integration workflows for client onboarding automation, cutting time-to-value by 40%. Drove automation that reduced manual work by 60%.",
+                            "tag": "Operations"
+                  },
+                  {
+                            "date": "2020",
+                            "role": "Customer Success Manager",
+                            "company": "ChatGuru",
+                            "desc": "Built and managed the Customer Success team. Established processes for onboarding, retention, and expansion.",
+                            "tag": "CS"
+                  },
+                  {
+                            "date": "2019 → 2020",
+                            "role": "Customer Success Analyst",
+                            "company": "ChatGuru",
+                            "desc": "First CS hire. Handled customer onboarding, support, and success workflows from the ground up.",
+                            "tag": "First hire"
+                  }
+          ]
+    },
+    "skills": {
+          "label": "Case Studies",
+          "headlinePrefix": "How I ",
+          "headlineEm": "solve",
+          "headlineSuffix": "real problems.",
+          "metaCategories": "03 case studies",
+          "metaDisciplines": "Problem · Architecture · Result",
+          "problemLabel": "Problem",
+          "architectureLabel": "Architecture",
+          "resultLabel": "Result",
+          "cases": [
+                  {
+                            "num": "/01",
+                            "title": "Semantic search over support tickets",
+                            "problem": "An IT services client had years of resolutions locked inside Freshservice tickets. Agents kept solving the same issues from scratch.",
+                            "architecture": "RAG pipeline with Freshservice, Supabase pgvector, and n8n sync workflows. Embeddings on ticket resolutions, retrieval wired into the agent workflow.",
+                            "result": "Past resolutions surfaced instantly during triage, as part of an automation program that cut manual effort by 60%."
+                  },
+                  {
+                            "num": "/02",
+                            "title": "AI on the WhatsApp API: JIPPfy",
+                            "problem": "Small businesses answering the same WhatsApp questions by hand, all day, every day.",
+                            "architecture": "Next.js product on the WhatsApp API with LLM-driven agent workflows (GPT and Claude APIs) handling first-line conversations.",
+                            "result": "Automated first-line replies in production. Live at jippfy.pt."
+                  },
+                  {
+                            "num": "/03",
+                            "title": "CRM / ERP integration delivery",
+                            "problem": "Client data siloed across HubSpot, Pipedrive, Salesforce, SAP, and custom APIs, with teams re-typing data between systems.",
+                            "architecture": "n8n and Make workflows, REST APIs and webhooks, plus Python microservices, owning the full lifecycle from requirements to delivery.",
+                            "result": "15+ client projects delivered across legal, retail, healthcare, real estate, and professional services, cutting manual work by 60%."
+                  }
+          ]
+    },
+    "testimonials": {
+          "label": "Testimonials",
+          "headlinePrefix": "What ",
+          "headlineEm": "colleagues",
+          "headlineSuffix": "say.",
+          "metaCount": "02 quotes",
+          "metaSource": "ChatGuru founders",
+          "quotes": [
+                  {
+                            "body": "Alexandre was our very first hire at ChatGuru, and since then he has proven to be an extremely versatile, committed, and responsible professional. He has a unique ability to learn and adapt, is easy to work with, intelligent, and someone you can trust completely.",
+                            "initials": "FC",
+                            "name": "Fernando Cavalcanti",
+                            "role": "CEO & Co-Founder · ChatGuru"
+                  },
+                  {
+                            "body": "Alex was one of the first people at ChatGuru and played a key role in our growth. He learns fast, adapts quickly, and consistently delivered what we needed, even in the most demanding moments. Reliable, easy to work with, and very attentive to details.",
+                            "initials": "IS",
+                            "name": "Iaron Simis",
+                            "role": "Co-Founder & CTO · ChatGuru"
+                  }
+          ]
+    },
+    "certifications": {
+          "title": "Certifications",
+          "expires": "Expires"
+    },
+    "contact": {
+          "available": "Open to full-time roles · Remote (EU/US) or Lisbon",
+          "headlinePrefix": "Let's ",
+          "headlineEm": "build",
+          "headlineSuffix": "something good.",
+          "github": "GitHub",
+          "linkedin": "LinkedIn",
+          "email": "Email"
+    },
+    "footer": {
+          "rights": "© 2026 Alexandre Jaques. All rights reserved.",
+          "location": "Lisbon, Portugal · 38.7223° N, 9.1393° W",
+          "version": "v.2026.05 · refresh edition"
     }
-  },
-  "experience": {
-    "label": "Experience",
-    "headlinePrefix": "From first hire to ",
-    "headlineEm": "Director",
-    "headlineSuffix": "and back to code.",
-    "metaPeriod": "2019 → 2025",
-    "metaYears": "6+ years",
-    "present": "Present",
-    "roles": [
-      {
-        "date": "Jan 2025 → Nov 2025",
-        "role": "Director",
-        "company": "ChatGuru",
-        "desc": "Led company strategy across product, operations, and engineering. Owned the AI chatbot roadmap: conversation flows, prompt strategies, and integration architecture with third-party platforms in production.",
-        "tag": "Leadership"
-      },
-      {
-        "date": "2021 → 2025",
-        "role": "Founder",
-        "company": "IntegraNinja (part-time, alongside ChatGuru)",
-        "desc": "Independent integration consultancy run in parallel with my role at ChatGuru. Architected automation and integration solutions with n8n, Make, Python, and REST APIs for 15+ clients across legal, retail, healthcare, real estate, and professional services, cutting manual effort by 60%.",
-        "tag": "Founder"
-      },
-      {
-        "date": "Nov 2020 → Jan 2025",
-        "role": "Head of Operations",
-        "company": "ChatGuru",
-        "desc": "Led cross-functional teams of 15+ people. Designed API integration workflows for client onboarding automation, cutting time-to-value by 40%. Drove automation that reduced manual work by 60%.",
-        "tag": "Operations"
-      },
-      {
-        "date": "2020",
-        "role": "Customer Success Manager",
-        "company": "ChatGuru",
-        "desc": "Built and managed the Customer Success team. Established processes for onboarding, retention, and expansion.",
-        "tag": "CS"
-      },
-      {
-        "date": "2019 → 2020",
-        "role": "Customer Success Analyst",
-        "company": "ChatGuru",
-        "desc": "First CS hire. Handled customer onboarding, support, and success workflows from the ground up.",
-        "tag": "First hire"
-      }
-    ]
-  },
-  "skills": {
-    "label": "Case Studies",
-    "headlinePrefix": "How I ",
-    "headlineEm": "solve",
-    "headlineSuffix": "real problems.",
-    "metaCategories": "03 case studies",
-    "metaDisciplines": "Problem · Architecture · Result",
-    "problemLabel": "Problem",
-    "architectureLabel": "Architecture",
-    "resultLabel": "Result",
-    "cases": [
-      {
-        "num": "/01",
-        "title": "Semantic search over support tickets",
-        "problem": "An IT services client had years of resolutions locked inside Freshservice tickets. Agents kept solving the same issues from scratch.",
-        "architecture": "RAG pipeline with Freshservice, Supabase pgvector, and n8n sync workflows. Embeddings on ticket resolutions, retrieval wired into the agent workflow.",
-        "result": "Past resolutions surfaced instantly during triage, as part of an automation program that cut manual effort by 60%."
-      },
-      {
-        "num": "/02",
-        "title": "AI on the WhatsApp API: JIPPfy",
-        "problem": "Small businesses answering the same WhatsApp questions by hand, all day, every day.",
-        "architecture": "Next.js product on the WhatsApp API with LLM-driven agent workflows (GPT and Claude APIs) handling first-line conversations.",
-        "result": "Automated first-line replies in production. Live at jippfy.pt."
-      },
-      {
-        "num": "/03",
-        "title": "CRM / ERP integration delivery",
-        "problem": "Client data siloed across HubSpot, Pipedrive, Salesforce, SAP, and custom APIs, with teams re-typing data between systems.",
-        "architecture": "n8n and Make workflows, REST APIs and webhooks, plus Python microservices, owning the full lifecycle from requirements to delivery.",
-        "result": "15+ client projects delivered across legal, retail, healthcare, real estate, and professional services, cutting manual work by 60%."
-      }
-    ]
-  },
-  "testimonials": {
-    "label": "Testimonials",
-    "headlinePrefix": "What ",
-    "headlineEm": "colleagues",
-    "headlineSuffix": "say.",
-    "metaCount": "02 quotes",
-    "metaSource": "ChatGuru founders",
-    "quotes": [
-      {
-        "body": "Alexandre was our very first hire at ChatGuru, and since then he has proven to be an extremely versatile, committed, and responsible professional. He has a unique ability to learn and adapt, is easy to work with, intelligent, and someone you can trust completely.",
-        "initials": "FC",
-        "name": "Fernando Cavalcanti",
-        "role": "CEO & Co-Founder · ChatGuru"
-      },
-      {
-        "body": "Alex was one of the first people at ChatGuru and played a key role in our growth. He learns fast, adapts quickly, and consistently delivered what we needed, even in the most demanding moments. Reliable, easy to work with, and very attentive to details.",
-        "initials": "IS",
-        "name": "Iaron Simis",
-        "role": "Co-Founder & CTO · ChatGuru"
-      }
-    ]
-  },
-  "certifications": {
-    "title": "Certifications",
-    "expires": "Expires"
-  },
-  "contact": {
-    "available": "Open to full-time roles · Remote (EU/US) or Lisbon",
-    "headlinePrefix": "Let's ",
-    "headlineEm": "build",
-    "headlineSuffix": "something good.",
-    "github": "GitHub",
-    "linkedin": "LinkedIn",
-    "email": "Email"
-  },
-  "footer": {
-    "rights": "© 2026 Alexandre Jaques. All rights reserved.",
-    "location": "Lisbon, Portugal · 38.7223° N, 9.1393° W",
-    "version": "v.2026.05 · refresh edition"
-  }
 }

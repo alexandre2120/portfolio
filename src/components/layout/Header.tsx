@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 import { useTranslation } from "@/lib/i18n"
 
@@ -38,15 +39,15 @@ export function Header() {
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <a href="#top" className="logo">
+        <Link href="/" className="logo">
           <span className="dot" />
           <span>
             Alexandre <em>Jaques</em>
           </span>
-        </a>
+        </Link>
         <div className="nav-links">
           {NAV_LINKS.map((link) => (
-            <a key={link.id} href={`#${link.id}`}>
+            <a key={link.id} href={`/#${link.id}`}>
               <span className="nl-num">{link.num}</span>
               {t(link.key)}
             </a>
