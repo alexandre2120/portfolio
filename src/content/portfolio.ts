@@ -195,7 +195,7 @@ const en: PortfolioCopy = {
       result: { label: "Working systems", status: "Live" },
       outputs: [
         { label: "Internal tools", detail: "faster operations" },
-        { label: "AI agents", detail: "reliable execution" },
+        { label: "AI agents", detail: "24/7 execution" },
         { label: "Automations", detail: "less manual work" },
         { label: "Insights", detail: "better decisions" },
         { label: "Integrations", detail: "connected stack" },
@@ -517,7 +517,7 @@ const pt: PortfolioCopy = {
       result: { label: "Sistemas funcionando", status: "No ar" },
       outputs: [
         { label: "Ferramentas internas", detail: "operação mais rápida" },
-        { label: "Agentes de IA", detail: "execução confiável" },
+        { label: "Agentes de IA", detail: "execução 24/7" },
         { label: "Automações", detail: "menos trabalho manual" },
         { label: "Insights", detail: "decisões melhores" },
         { label: "Integrações", detail: "stack conectada" },

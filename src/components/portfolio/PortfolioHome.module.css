@@ -2224,6 +2224,33 @@ a.shippedRow:hover {
   }
 }
 
+@media (max-width: 1100px) {
+  .mapFrame {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .heroStatement {
+    position: relative;
+    top: auto;
+    left: auto;
+    order: -1;
+    max-width: 22rem;
+    padding: 1.1rem 0 0.2rem 1rem;
+    font-size: 1.15rem;
+    border-left: 2px solid var(--rust);
+    transform: none;
+  }
+
+  :global(html:lang(pt)) .heroStatement {
+    top: auto;
+    left: auto;
+    max-width: 22rem;
+    font-size: 1.15rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .root *,
   .root *::before,

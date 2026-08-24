@@ -568,97 +568,6 @@
 }
 
 @media (max-width: 1100px) {
-  .sheet {
-    min-height: 680px;
-  }
-
-  .displayWords span {
-    font-size: clamp(5rem, 12vw, 8.5rem);
-  }
-
-  .chaos {
-    left: 5%;
-  }
-
-  .inWord {
-    right: 7%;
-  }
-
-  .system {
-    left: 15%;
-  }
-
-  .outWord {
-    right: 10%;
-  }
-
-  .mainFlow {
-    right: 3.5%;
-    left: 4.5%;
-    grid-template-columns: 132px minmax(340px, 1fr) 235px;
-    gap: 14px;
-  }
-
-  .portrait {
-    left: calc(49.5% - 70px);
-  }
-
-  .resultZone {
-    grid-template-columns: 105px 116px;
-    gap: 9px;
-  }
-
-  .nodeCard {
-    padding-inline: 7px;
-  }
-}
-
-@media (max-width: 860px) {
-  .sheet {
-    min-height: 850px;
-  }
-
-  .portrait {
-    top: 15%;
-  }
-
-  .mainFlow {
-    top: 39%;
-    grid-template-columns: 130px minmax(300px, 1fr);
-    gap: 28px;
-  }
-
-  .resultZone {
-    grid-column: 1 / -1;
-    grid-template-columns: 145px minmax(0, 1fr);
-    width: min(430px, 70%);
-    margin: 44px 0 0 auto;
-  }
-
-  .outputList {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .outputList > li:nth-child(2),
-  .outputList > li:nth-child(4) {
-    margin-left: 0;
-  }
-
-  .flowLine {
-    right: 15%;
-  }
-
-  .system {
-    bottom: 7%;
-  }
-
-  .outWord {
-    bottom: 7%;
-  }
-}
-
-@media (max-width: 700px) {
   .root {
     border-radius: 12px;
   }
@@ -697,7 +606,8 @@
     justify-self: end;
   }
 
-  .portrait {
+  /* .root prefix outranks the page-level :where() margin reset. */
+  .root .portrait {
     position: relative;
     top: auto;
     left: auto;
@@ -724,7 +634,7 @@
   }
 
   .inputZone {
-    width: min(100%, 390px);
+    width: min(100%, 460px);
     min-height: 260px;
     margin: 0 auto;
     padding-left: 12px;
@@ -755,10 +665,10 @@
     font-size: 7px;
   }
 
-  .processZone {
+  .root .processZone {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 6px;
-    width: min(100%, 390px);
+    width: min(100%, 460px);
     margin: 0 auto;
     padding-left: 0;
   }
@@ -816,7 +726,7 @@
 
   .resultZone {
     display: flex;
-    width: min(100%, 390px);
+    width: min(100%, 460px);
     flex-direction: column;
     gap: 16px;
     margin: 0 auto;
@@ -1069,9 +979,28 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   :global(html:lang(pt)) .displayWords span {
-    font-size: clamp(2.65rem, 13.8vw, 4rem);
+    font-size: clamp(2.65rem, 13.8vw, 6rem);
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1340px) {
+  .resultZone {
+    translate: 34px 0;
+  }
+
+  .resultCard {
+    width: 138px;
+    translate: 0 -51px;
+  }
+
+  .resultCard h3 {
+    font-size: 2rem;
+  }
+
+  .resultZone::after {
+    left: 30%;
   }
 }
 
