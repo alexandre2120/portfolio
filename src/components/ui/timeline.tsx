@@ -65,7 +65,7 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
           style={{ height: height + "px" }}
           className="absolute left-8 top-0 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-zinc-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] md:left-8 dark:via-zinc-800"
         >
-          {/* Animated fill line — teal accent */}
+          {/* Animated fill line with a teal accent */}
           <motion.div
             style={{
               height: heightTransform,

@@ -65,7 +65,7 @@ export function Typewriter({
       "(prefers-reduced-motion: reduce)",
     ).matches
     if (prefersReduced) {
-      // Show full text immediately — skip animation loop
+      // Show full text immediately and skip the animation loop
       return
     }
 
