@@ -223,6 +223,7 @@ export function PortfolioHome() {
   }))
 
   const mailHref = `mailto:alexandrjaques@gmail.com?subject=${encodeURIComponent(labels.emailSubject)}`
+  const talkHref = "https://links.mensagi.com/alexandre-jaques"
 
   return (
     <div className={styles.root}>
@@ -266,7 +267,13 @@ export function PortfolioHome() {
                 PT
               </button>
             </div>
-            <a className={styles.headerCta} href={mailHref}>
+            <a
+              className={styles.headerCta}
+              href={talkHref}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${copy.nav.talk}, ${labels.newWindow}`}
+            >
               {copy.nav.talk}
               <ArrowUpRight aria-hidden="true" size={16} weight="bold" />
             </a>
