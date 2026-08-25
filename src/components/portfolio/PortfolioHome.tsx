@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import {
   ArrowDown,
   ArrowRight,
@@ -377,6 +378,15 @@ export function PortfolioHome() {
                           {project.linkLabel ?? labels.openProject}
                           <ArrowUpRight aria-hidden="true" size={18} />
                         </ExternalLink>
+                      ) : null}
+                      {project.secondaryHref ? (
+                        <Link
+                          href={project.secondaryHref}
+                          className={styles.textLink}
+                        >
+                          {project.secondaryLabel ?? labels.openProject}
+                          <ArrowUpRight aria-hidden="true" size={18} />
+                        </Link>
                       ) : null}
                     </div>
                   </article>

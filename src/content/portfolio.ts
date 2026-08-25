@@ -56,6 +56,8 @@ export type PortfolioCopy = {
       image: string
       href?: string
       linkLabel?: string
+      secondaryHref?: string
+      secondaryLabel?: string
     }>
     shippedLabel: string
     shipped: Array<{
@@ -241,6 +243,21 @@ const en: PortfolioCopy = {
     caseStudies: [
       {
         number: "01",
+        status: "Live SaaS, paying customers",
+        title: "Mensagi, AI customer service on WhatsApp and Instagram",
+        summary: "A multi-tenant SaaS that answers the first contact, checks the real calendar and books the appointment. Built and operated with a partner.",
+        problem: "Service businesses (barbershops, gyms, clinics) lose bookings after hours, and answering the same WhatsApp and Instagram questions by hand consumes the working day.",
+        build: "pnpm and Turborepo monorepo: Next.js on Vercel, an authoritative Fastify API, BullMQ workers, one isolated container per WhatsApp number, Supabase with row level security, Redis, and LLM calls behind a prompt layer.",
+        outcome: "In production with around twelve businesses and paying customers in Portugal and Brazil. The AI books into the real calendar, with owner approval where it is wanted and escalation when a conversation needs a person.",
+        tags: ["Next.js", "Fastify", "Supabase", "BullMQ", "WhatsApp API", "LLM APIs"],
+        image: "/images/projects/mensagi.png",
+        href: "https://mensagi.com",
+        linkLabel: "Open live product",
+        secondaryHref: "/projects/mensagemz",
+        secondaryLabel: "Read the architecture case study",
+      },
+      {
+        number: "02",
         status: "Private client system",
         title: "Semantic search over support history",
         summary: "A RAG workflow that turns years of solved tickets into usable context during triage.",
@@ -249,19 +266,6 @@ const en: PortfolioCopy = {
         outcome: "Past resolutions became available during triage as part of an automation program that reduced manual effort by 60%.",
         tags: ["RAG", "Freshservice", "Supabase", "n8n", "LLM APIs"],
         image: "/images/projects/chatguru-tool.png",
-      },
-      {
-        number: "02",
-        status: "Live product",
-        title: "JIPPfy, AI on the WhatsApp API",
-        summary: "A working product for businesses that need first-line WhatsApp conversations handled consistently.",
-        problem: "Small teams were answering the same customer questions manually throughout the day.",
-        build: "Next.js, WhatsApp API, LLM workflows, automation, conversation state and production monitoring.",
-        outcome: "First-line replies run in production, with a clear escalation path for conversations that need a person.",
-        tags: ["Next.js", "WhatsApp API", "AI agents", "Automation"],
-        image: "/images/projects/jippfy.png",
-        href: "https://www.jippfy.pt",
-        linkLabel: "Open live product",
       },
       {
         number: "03",
@@ -278,6 +282,26 @@ const en: PortfolioCopy = {
     shippedLabel: "Other shipped work",
     shipped: [
       {
+        title: "Disparador",
+        type: "WhatsApp broadcast tool, partnership",
+        status: "Live",
+        href: "https://disparador.mensagi.com",
+        image: "/images/projects/disparador.png",
+      },
+      {
+        title: "Mundo Criativo",
+        type: "Own product, NFC review plates",
+        status: "Live, selling",
+        href: "https://mundocriativo.flamecluster.com",
+        image: "/images/projects/mc-flamecluster.png",
+      },
+      {
+        title: "E-commerce store and operations panel",
+        type: "Direct client, name withheld",
+        status: "Shipped",
+        image: "/images/projects/cliente-ecommerce.png",
+      },
+      {
         title: "ChatGuru Import Tool",
         type: "Functional internal utility",
         status: "Shipped",
@@ -291,12 +315,6 @@ const en: PortfolioCopy = {
         href: "https://www.theskinaesthetic.pt",
         image: "/images/projects/theskinaesthetic.png",
       },
-      {
-        title: "BunnieMonki Agency",
-        type: "Service website",
-        status: "Archived delivery",
-        image: "/images/projects/agency.png",
-      },
     ],
   },
   mvps: {
@@ -305,15 +323,15 @@ const en: PortfolioCopy = {
     intro:
       "MVPs are separated from mature production work on purpose. They prove a behavior, a market or an operating model, not a finished company.",
     live: {
-      status: "Live beta",
-      title: "BunnieMonki Marketplace",
+      status: "Live, validating",
+      title: "Orçamentista, quoting for construction and ITED",
       description:
-        "A marketplace MVP built to test catalog, discovery, seller operations and the path from browsing to transaction.",
+        "A platform that takes a Portuguese construction or electrical company from client request to sent proposal, attacking the real bottleneck: waiting for supplier prices. Suppliers reply through a single link, with no account and nothing to install.",
       learning:
-        "The build made the operational cost of marketplace complexity visible early, before treating the concept as a mature product.",
-      href: "https://bunniemonki.com",
-      image: "/images/projects/bunniemonki.png",
-      tags: ["Next.js", "Fastify", "PostgreSQL", "Marketplace"],
+        "The platform is live and the pricing engine explains every number back to the rule that produced it, but the central bet, that suppliers actually answer a cold link, is not validated yet. That is the next test, not more features.",
+      href: "https://orcamentista.flamecluster.com",
+      image: "/images/projects/orcamentista.png",
+      tags: ["FastAPI", "Next.js", "PostgreSQL", "DDD", "Explainable pricing"],
     },
   },
   concepts: {
@@ -415,10 +433,10 @@ const en: PortfolioCopy = {
     belief: "Businesses do not need more AI demos. They need systems that survive the real world.",
     liveLabel: "Live today",
     liveItems: [
-      "Public academy and resource delivery",
-      "Lead capture and private operations panel",
-      "Content workflows for Instagram and Threads",
-      "Postgres data layer, Docker and Coolify deployment",
+      "Public academy with free resources behind a lead form",
+      "Instagram comment to DM funnel, proven in production",
+      "Private operations panel: leads, triggers, content approval",
+      "Plain Postgres with numbered SQL, Docker, Coolify and systemd timers",
     ],
     roadmapLabel: "Where it goes next",
     roadmap:
@@ -434,9 +452,9 @@ const en: PortfolioCopy = {
     intro:
       "The Lab is where small tools, AI workflows and physical ideas can be tested without pretending every experiment is a startup.",
     currently: [
-      { label: "Building", value: "A Oficina and AI integration systems" },
+      { label: "Building", value: "Mensagi, A Oficina and GBrain, my own MCP knowledge server" },
       { label: "Learning", value: "AI and Machine Learning Engineering" },
-      { label: "Exploring", value: "Reliable agents, evaluation and human handoffs" },
+      { label: "Exploring", value: "Model Context Protocol, retrieval quality and reliable human handoffs" },
       { label: "Based in", value: "Lisbon" },
     ],
     offlineHeadline: "Enough about work.",
@@ -563,6 +581,21 @@ const pt: PortfolioCopy = {
     caseStudies: [
       {
         number: "01",
+        status: "SaaS no ar, clientes pagantes",
+        title: "Mensagi, atendimento com IA no WhatsApp e no Instagram",
+        summary: "Um SaaS multi-tenant que atende o primeiro contacto, consulta a agenda real e marca. Construído e operado com um sócio.",
+        problem: "Negócios de serviços (barbearias, ginásios, clínicas) perdem marcações fora de horário, e responder à mão às mesmas perguntas no WhatsApp e no Instagram consome o dia de trabalho.",
+        build: "Monorepo pnpm e Turborepo: Next.js na Vercel, API Fastify autoritativa, workers BullMQ, um container isolado por número de WhatsApp, Supabase com row level security, Redis e chamadas de LLM atrás de uma camada de prompt.",
+        outcome: "Em produção com cerca de doze empresas e clientes pagantes em Portugal e no Brasil. A IA marca na agenda real, com aprovação do dono onde ele quiser e escalada quando a conversa precisa de uma pessoa.",
+        tags: ["Next.js", "Fastify", "Supabase", "BullMQ", "WhatsApp API", "APIs de LLM"],
+        image: "/images/projects/mensagi.png",
+        href: "https://mensagi.com",
+        linkLabel: "Abrir produto no ar",
+        secondaryHref: "/projects/mensagemz",
+        secondaryLabel: "Ler o case study de arquitetura",
+      },
+      {
+        number: "02",
         status: "Sistema privado de cliente",
         title: "Busca semântica no histórico de suporte",
         summary: "Um workflow RAG que transforma anos de tickets resolvidos em contexto útil durante a triagem.",
@@ -571,19 +604,6 @@ const pt: PortfolioCopy = {
         outcome: "Resoluções antigas passaram a aparecer na triagem, dentro de um programa de automação que reduziu o esforço manual em 60%.",
         tags: ["RAG", "Freshservice", "Supabase", "n8n", "APIs de LLM"],
         image: "/images/projects/chatguru-tool.png",
-      },
-      {
-        number: "02",
-        status: "Produto no ar",
-        title: "JIPPfy, IA na WhatsApp API",
-        summary: "Um produto funcional para negócios que precisam manter a primeira linha de atendimento do WhatsApp consistente.",
-        problem: "Equipes pequenas respondiam manualmente às mesmas dúvidas de clientes ao longo do dia.",
-        build: "Next.js, WhatsApp API, workflows de LLM, automação, estado das conversas e monitoramento em produção.",
-        outcome: "As respostas de primeira linha rodam em produção, com um caminho claro de escalada para conversas que precisam de uma pessoa.",
-        tags: ["Next.js", "WhatsApp API", "Agentes de IA", "Automação"],
-        image: "/images/projects/jippfy.png",
-        href: "https://www.jippfy.pt",
-        linkLabel: "Abrir produto no ar",
       },
       {
         number: "03",
@@ -600,6 +620,26 @@ const pt: PortfolioCopy = {
     shippedLabel: "Outros projetos entregues",
     shipped: [
       {
+        title: "Disparador",
+        type: "Disparo em massa no WhatsApp, sociedade",
+        status: "No ar",
+        href: "https://disparador.mensagi.com",
+        image: "/images/projects/disparador.png",
+      },
+      {
+        title: "Mundo Criativo",
+        type: "Produto próprio, placas NFC de avaliação",
+        status: "No ar, a vender",
+        href: "https://mundocriativo.flamecluster.com",
+        image: "/images/projects/mc-flamecluster.png",
+      },
+      {
+        title: "Loja online e painel de operações",
+        type: "Cliente direto, nome reservado",
+        status: "Entregue",
+        image: "/images/projects/cliente-ecommerce.png",
+      },
+      {
         title: "ChatGuru Import Tool",
         type: "Ferramenta interna funcional",
         status: "Entregue",
@@ -613,12 +653,6 @@ const pt: PortfolioCopy = {
         href: "https://www.theskinaesthetic.pt",
         image: "/images/projects/theskinaesthetic.png",
       },
-      {
-        title: "BunnieMonki Agency",
-        type: "Site de serviços",
-        status: "Entrega arquivada",
-        image: "/images/projects/agency.png",
-      },
     ],
   },
   mvps: {
@@ -627,15 +661,15 @@ const pt: PortfolioCopy = {
     intro:
       "MVPs ficam separados do trabalho maduro em produção de propósito. Eles validam um comportamento, um mercado ou um modelo de operação, não uma empresa pronta.",
     live: {
-      status: "Beta no ar",
-      title: "BunnieMonki Marketplace",
+      status: "No ar, a validar",
+      title: "Orçamentista, orçamentação para construção e ITED",
       description:
-        "Um MVP de marketplace construído para testar catálogo, descoberta, operação de vendedores e o caminho da navegação até a transação.",
+        "Uma plataforma que leva uma empresa portuguesa de construção ou instalações elétricas do pedido do cliente até à proposta enviada, atacando o gargalo real: a espera pelos preços dos fornecedores. O fornecedor responde por um link único, sem conta e sem instalar nada.",
       learning:
-        "O projeto deixou o custo operacional da complexidade de um marketplace visível antes de tratar o conceito como produto maduro.",
-      href: "https://bunniemonki.com",
-      image: "/images/projects/bunniemonki.png",
-      tags: ["Next.js", "Fastify", "PostgreSQL", "Marketplace"],
+        "A plataforma está no ar e o motor de cálculo explica cada número de volta à regra que o produziu, mas a aposta central, de que os fornecedores respondem mesmo a um link frio, ainda não foi validada. É esse o próximo teste, não mais funcionalidades.",
+      href: "https://orcamentista.flamecluster.com",
+      image: "/images/projects/orcamentista.png",
+      tags: ["FastAPI", "Next.js", "PostgreSQL", "DDD", "Cálculo explicável"],
     },
   },
   concepts: {
@@ -737,10 +771,10 @@ const pt: PortfolioCopy = {
     belief: "Negócios não precisam de mais demos de IA. Precisam de sistemas que sobrevivam à realidade.",
     liveLabel: "No ar hoje",
     liveItems: [
-      "Academia pública e entrega de materiais",
-      "Captação de leads e painel privado de operação",
-      "Workflows de conteúdo para Instagram e Threads",
-      "Postgres, Docker e deploy no Coolify",
+      "Academia pública com materiais gratuitos atrás de um formulário",
+      "Funil de comentário do Instagram até DM, comprovado em produção",
+      "Painel privado de operação: leads, gatilhos, aprovação de conteúdo",
+      "Postgres puro com SQL numerado, Docker, Coolify e timers systemd",
     ],
     roadmapLabel: "O que vem depois",
     roadmap:
@@ -756,9 +790,9 @@ const pt: PortfolioCopy = {
     intro:
       "O Lab é onde pequenas ferramentas, workflows de IA e ideias físicas podem ser testados sem fingir que cada experimento é uma startup.",
     currently: [
-      { label: "Construindo", value: "A Oficina e sistemas de integração com IA" },
+      { label: "Construindo", value: "Mensagi, A Oficina e o GBrain, o meu servidor MCP de conhecimento" },
       { label: "Aprendendo", value: "Engenharia de IA e Machine Learning" },
-      { label: "Explorando", value: "Agentes confiáveis, avaliação e handoffs humanos" },
+      { label: "Explorando", value: "Model Context Protocol, qualidade de retrieval e handoffs humanos confiáveis" },
       { label: "Baseado em", value: "Lisboa" },
     ],
     offlineHeadline: "Chega de trabalho.",
