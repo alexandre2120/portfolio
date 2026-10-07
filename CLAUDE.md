@@ -51,6 +51,27 @@ The Skin Aesthetic. MVP: Orçamentista. Conceitos: Padel App, Daillo.
 Removidos a 25/08/2026 por decisão do Alexandre: JIPPfy e BunnieMonki
 (marketplace e agência).
 
+## Página de links (`/links`), criada a 07/10/2026
+
+Linktree próprio na direção visual "Consola" (escuro, mono, ácido da Oficina
+Studio, uma cor por produto), aprovada pelo Alexandre entre três amostras.
+
+| O quê | Onde |
+|---|---|
+| Conteúdo (links, badges, cores, PT/EN) | `src/content/links.ts`. O `id` de cada link é a chave dos números: nunca renomear um id que já tenha cliques |
+| Página pública | `src/app/links/page.tsx` → `src/components/links/LinksPage.tsx` (PT por omissão, botão EN) |
+| Redirecionamento com registo | `src/app/links/go/[id]/route.ts`: regista o clique e faz 302. Domínios próprios (`OWN_DOMAINS`) recebem `utm_source=alexandrejaques.com`, `utm_medium=link-in-bio`, `utm_campaign=<canal de origem>`, `utm_content=<id>` |
+| Visitas e cliques em mailto | `src/app/links/api/e/route.ts` (beacon na mesma origem) |
+| Painel privado | `/links/painel` (`LinksPainel.tsx`), pede a palavra-passe da API, noindex. Inclui gerador de UTM |
+| Serviço dos números | `links-api` na VPS de produtos, `https://links-api.169.58.162.165.sslip.io`, código em `jobseeker/links-api/` (repo privado `alexandre2120/links-api`) |
+
+Como marcar a origem: partilhar `alexandrejaques.com/links?utm_source=instagram&utm_medium=bio`
+(o painel gera estes links) ou, à mão, `alexandrejaques.com/links?s=instagram`.
+
+Só a produção (`VERCEL_ENV=production`) envia eventos. Em local, `LINKS_TRACK=1`
+com `LINKS_API_URL` e `NEXT_PUBLIC_LINKS_API_URL` a apontar para uma cópia local
+da API (`LINKS_SENHA=teste node servidor.mjs`), nunca para a de produção.
+
 ## Regras de conteúdo (não negociáveis)
 
 * Título: **AI Integration Engineer**. React/Next é skill secundária.
