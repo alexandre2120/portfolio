@@ -13,11 +13,10 @@ export const LINKS_API_URL =
   process.env.LINKS_API_URL ?? "https://links-api.169.58.162.165.sslip.io"
 
 /**
- * Only production sends events, so local dev and Vercel previews never
- * pollute the real numbers. LINKS_TRACK=1 forces it on for a test.
+ * Events are only sent where LINKS_TRACK=1 is set: the production app on
+ * Coolify. Local dev and any provisional URL never touch the real numbers.
  */
-const TRACKING_ON =
-  process.env.VERCEL_ENV === "production" || process.env.LINKS_TRACK === "1"
+const TRACKING_ON = process.env.LINKS_TRACK === "1"
 
 export const UTM_KEYS = [
   "utm_source",
@@ -100,7 +99,9 @@ export function requestContext(headers: Headers) {
   return {
     ip: forwarded || headers.get("x-real-ip") || undefined,
     ua: headers.get("user-agent") || undefined,
-    country: headers.get("x-vercel-ip-country") || undefined,
+    // Behind Traefik there is no geo header: links-api resolves the country
+    // from the IP. The Vercel header stays as a fallback for any CDN in front.
+    country: headers.get("x-vercel-ip-country") || headers.get("cf-ipcountry") || undefined,
   }
 }
 

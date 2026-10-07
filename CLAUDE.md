@@ -7,7 +7,9 @@ corrige este ficheiro na mesma sessão.
 
 Portfólio pessoal do **Alexandre Jaques**, posicionado como
 **AI Integration Engineer** (pipelines de LLM, integrações de API, automação
-de workflows). Next.js na Vercel, repo `alexandre2120/portfolio`.
+de workflows). Next.js, repo `alexandre2120/portfolio`. **Desde 07/10/2026 corre no
+Coolify da VPS de produtos** (Dockerfile, `output: "standalone"`); saiu da Vercel porque a
+equipa `bunniemonki` foi bloqueada (site em 402).
 
 Serve o redesign **"Chaos In / System Out"** (PR #7, merged 24/08/2026):
 tipografia Anton + General Sans, paleta de papel, secções por maturidade.
@@ -68,7 +70,7 @@ Studio, uma cor por produto), aprovada pelo Alexandre entre três amostras.
 Como marcar a origem: partilhar `alexandrejaques.com/links?utm_source=instagram&utm_medium=bio`
 (o painel gera estes links) ou, à mão, `alexandrejaques.com/links?s=instagram`.
 
-Só a produção (`VERCEL_ENV=production`) envia eventos. Em local, `LINKS_TRACK=1`
+Só a app com `LINKS_TRACK=1` (a de produção no Coolify) envia eventos. Em local, `LINKS_TRACK=1`
 com `LINKS_API_URL` e `NEXT_PUBLIC_LINKS_API_URL` a apontar para uma cópia local
 da API (`LINKS_SENHA=teste node servidor.mjs`), nunca para a de produção.
 
@@ -109,8 +111,9 @@ npm run build
 npm run lint
 ```
 
-Correr `build` e `lint` antes de commitar. O deploy na Vercel é automático
-depois do merge no `main`.
+Correr `build` e `lint` antes de commitar. O deploy é no Coolify da VPS de
+produtos a partir do `main` (ver `jobseeker/links-api/README.md` para o padrão de
+deploy pela API do Coolify).
 
 ## Stack
 
