@@ -109,7 +109,7 @@ export function LinksPage() {
 
         <section className={styles.head} style={stagger()}>
           <div className={styles.avatar}>
-            <Image src="/profile-square.png" alt="" width={152} height={152} priority />
+            <Image src="/links-avatar.webp" alt="" width={156} height={156} priority />
           </div>
           <div className={styles.identity}>
             <h1>{profile.name}</h1>
