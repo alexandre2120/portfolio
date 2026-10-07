@@ -213,7 +213,7 @@
   display: grid;
   place-items: center;
   height: 50px;
-  color: var(--ink);
+  color: var(--tone);
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 15px;
@@ -225,7 +225,6 @@
 }
 
 .socials a:hover {
-  color: var(--tone);
   border-color: color-mix(in srgb, var(--tone) 45%, transparent);
   background: var(--panel-hover);
 }
@@ -275,6 +274,11 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 14px;
+}
+
+.featuredBody {
+  flex: 1;
+  min-width: 0;
 }
 
 .featuredTop strong {
@@ -453,6 +457,23 @@
   border-radius: 12px;
   font-size: 15px;
   font-weight: 700;
+}
+
+.tile[data-logo] {
+  overflow: hidden;
+  background: transparent;
+}
+
+.tile[data-logo] img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tile[data-logo="mark"] {
+  padding: 8px;
+  background: #24201c;
+  border: 1px solid var(--line-strong);
 }
 
 .text {

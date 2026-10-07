@@ -41,6 +41,11 @@ export type LinkItem = {
   /** Letters in the icon tile when there is no brand icon. */
   mark?: string
   icon?: LinkIcon
+  /**
+   * Brand logo in public/links/logos. "cover" fills the tile (logos that are
+   * already an app icon); "mark" sits on a dark tile with some padding.
+   */
+  logo?: { src: string; fit: "cover" | "mark" }
 }
 
 export type LinkGroup = {
@@ -81,6 +86,7 @@ export const featured: LinkItem = {
     en: "Custom AI software for companies that already run on process.",
   },
   tone: "acid",
+    logo: { src: "/links/logos/oficina-studio.svg", fit: "cover" },
   badges: [
     {
       label: { pt: "agenda aberta", en: "booking open" },
@@ -150,6 +156,7 @@ export const groups: LinkGroup[] = [
           en: "Run solo with a team of AI agents",
         },
         tone: "terra",
+        logo: { src: "/links/logos/orquestra-de-um.svg", fit: "cover" },
         mark: "O",
         badges: [
           { label: { pt: "comunidade", en: "community" }, tone: "terra" },
@@ -165,6 +172,7 @@ export const groups: LinkGroup[] = [
           en: "AI customer service on WhatsApp",
         },
         tone: "green",
+        logo: { src: "/links/logos/mensagi.svg", fit: "mark" },
         mark: "M",
         badges: [
           {
@@ -184,6 +192,7 @@ export const groups: LinkGroup[] = [
           en: "Quotes and takeoffs for HVAC",
         },
         tone: "blue",
+        logo: { src: "/links/logos/aestum.svg", fit: "mark" },
         mark: "A",
         badges: [
           { label: { pt: "beta", en: "beta" }, tone: "blue" },
@@ -220,6 +229,7 @@ export const groups: LinkGroup[] = [
           en: "Behind the scenes of the studio",
         },
         tone: "rust",
+        logo: { src: "/links/logos/oficina-studio.svg", fit: "cover" },
         icon: "instagram",
         badges: [{ label: { pt: "instagram", en: "instagram" }, tone: "neutral" }],
       },
@@ -232,6 +242,7 @@ export const groups: LinkGroup[] = [
           en: "Case studies, architecture and career",
         },
         tone: "neutral",
+        logo: { src: "/links/logos/portfolio.svg", fit: "mark" },
         mark: "AJ",
         badges: [{ label: { pt: "case studies", en: "case studies" }, tone: "neutral" }],
       },

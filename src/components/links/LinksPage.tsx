@@ -149,7 +149,12 @@ export function LinksPage() {
         </p>
         <a className={styles.featured} href={hrefFor(featured)} style={stagger()}>
           <span className={styles.featuredTop}>
-            <span>
+            {featured.logo ? (
+              <span className={styles.tile} data-logo={featured.logo.fit} aria-hidden="true">
+                <Image src={featured.logo.src} alt="" width={44} height={44} unoptimized />
+              </span>
+            ) : null}
+            <span className={styles.featuredBody}>
               <strong>{featured.title[locale]}</strong>
               <span className={styles.featuredText}>{featured.description?.[locale]}</span>
             </span>
@@ -182,8 +187,19 @@ export function LinksPage() {
                 return (
                   <li key={link.id} style={stagger()}>
                     <a className={styles.row} href={hrefFor(link)} onClick={onClick(link)}>
-                      <span className={styles.tile} style={tone(link.tone)} aria-hidden="true">
-                        {Icon ? <Icon size={21} weight="bold" /> : link.mark}
+                      <span
+                        className={styles.tile}
+                        data-logo={link.logo?.fit}
+                        style={tone(link.tone)}
+                        aria-hidden="true"
+                      >
+                        {link.logo ? (
+                          <Image src={link.logo.src} alt="" width={44} height={44} unoptimized />
+                        ) : Icon ? (
+                          <Icon size={21} weight="bold" />
+                        ) : (
+                          link.mark
+                        )}
                       </span>
                       <span className={styles.text}>
                         <strong>{link.title[locale]}</strong>
