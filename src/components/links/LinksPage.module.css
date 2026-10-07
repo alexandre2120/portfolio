@@ -50,7 +50,7 @@
 .column > *,
 .list > li {
   animation: rise 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: calc(var(--i, 0) * 45ms);
+  animation-delay: min(calc(var(--i, 0) * 40ms), 360ms);
 }
 
 @keyframes rise {
