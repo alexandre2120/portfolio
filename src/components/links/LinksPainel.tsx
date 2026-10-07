@@ -609,6 +609,10 @@ export function LinksPainel() {
 
         <UtmBuilder />
       </div>
+      <p className={styles.credit}>
+        Países calculados com <a href="https://db-ip.com">IP Geolocation by DB-IP</a> (CC BY 4.0).
+        O IP não é guardado.
+      </p>
     </main>
   )
 }

@@ -615,6 +615,18 @@
   color: var(--soft);
 }
 
+.credit {
+  margin-top: 18px;
+  color: var(--faint);
+  font-size: 11.5px;
+}
+
+.credit a {
+  color: var(--soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .page button:focus-visible,
 .page input:focus-visible {
   outline: 2px solid var(--acid);
