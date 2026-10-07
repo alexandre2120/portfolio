@@ -95,9 +95,11 @@ export function buildTarget(link: LinkItem, utm: Utm) {
 }
 
 export function requestContext(headers: Headers) {
-  const forwarded = headers.get("x-forwarded-for")?.split(",")[0]?.trim()
+  // Traefik sets X-Real-Ip from the TCP peer. In X-Forwarded-For only the
+  // last entry was added by the proxy; earlier ones can be forged by the client.
+  const forwarded = headers.get("x-forwarded-for")?.split(",").pop()?.trim()
   return {
-    ip: forwarded || headers.get("x-real-ip") || undefined,
+    ip: headers.get("x-real-ip") || forwarded || undefined,
     ua: headers.get("user-agent") || undefined,
     // Behind Traefik there is no geo header: links-api resolves the country
     // from the IP. The Vercel header stays as a fallback for any CDN in front.
