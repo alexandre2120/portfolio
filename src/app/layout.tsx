@@ -1,8 +1,6 @@
 import { type Metadata } from "next"
 import localFont from "next/font/local"
 
-import { Analytics } from "@vercel/analytics/next"
-
 import { Providers } from "@/app/providers"
 
 import "@/styles/tailwind.css"
@@ -84,7 +82,6 @@ export default function RootLayout({
           <div className="grain" aria-hidden="true" />
           {children}
         </Providers>
-        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   )
