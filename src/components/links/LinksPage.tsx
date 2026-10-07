@@ -8,6 +8,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   WhatsappLogo,
+  YoutubeLogo,
 } from "@phosphor-icons/react"
 import Image from "next/image"
 import { useEffect, type CSSProperties } from "react"
@@ -34,6 +35,7 @@ const icons: Record<LinkIcon, typeof LinkedinLogo> = {
   instagram: InstagramLogo,
   whatsapp: WhatsappLogo,
   email: EnvelopeSimple,
+  youtube: YoutubeLogo,
 }
 
 let viewSent = false
@@ -190,6 +192,7 @@ export function LinksPage() {
                       <span
                         className={styles.tile}
                         data-logo={link.logo?.fit}
+                        data-icon={link.icon}
                         style={tone(link.tone)}
                         aria-hidden="true"
                       >

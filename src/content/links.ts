@@ -14,6 +14,7 @@ export type BadgeTone =
   | "blue"
   | "violet"
   | "rust"
+  | "red"
   | "neutral"
 
 export type LinkBadge = {
@@ -29,6 +30,7 @@ export type LinkIcon =
   | "instagram"
   | "whatsapp"
   | "email"
+  | "youtube"
 
 export type LinkItem = {
   id: string
@@ -104,6 +106,22 @@ export const pipeline: Text[] = [
   { pt: "entregue", en: "shipped" },
 ]
 
+const youtube: LinkItem = {
+  id: "youtube",
+  href: "https://www.youtube.com/@alexandrjaques",
+  title: { pt: "YouTube", en: "YouTube" },
+  description: {
+    pt: "IA na prática: código a correr, custos reais",
+    en: "AI in practice: running code, real costs",
+  },
+  tone: "red",
+  icon: "youtube",
+  badges: [
+    { label: { pt: "vídeos", en: "videos" }, tone: "red" },
+    { label: { pt: "@alexandrjaques", en: "@alexandrjaques" }, tone: "neutral" },
+  ],
+}
+
 export const socials: LinkItem[] = [
   {
     id: "linkedin",
@@ -112,6 +130,7 @@ export const socials: LinkItem[] = [
     tone: "blue",
     icon: "linkedin",
   },
+  youtube,
   {
     id: "github",
     href: "https://github.com/alexandre2120",
@@ -205,6 +224,7 @@ export const groups: LinkGroup[] = [
     id: "conteudo",
     label: { pt: "conteúdo", en: "content" },
     items: [
+      youtube,
       {
         id: "editar-video-claude",
         href: "https://aoficina.academy/editar-video-com-claude",
@@ -254,7 +274,7 @@ export const allLinks: LinkItem[] = [
   featured,
   ...socials,
   ...groups.flatMap((group) => group.items),
-]
+].filter((link, index, list) => list.findIndex((other) => other.id === link.id) === index)
 
 export function findLink(id: string): LinkItem | undefined {
   return allLinks.find((link) => link.id === id)
