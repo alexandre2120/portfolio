@@ -32,15 +32,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://alexandrejaques.com"),
   title: {
     template: "%s - Alexandre Jaques",
-    default: "Alexandre Jaques - AI Integration Engineer",
+    default: "Alexandre Jaques - Applied AI Engineer",
   },
   description:
-    "AI Integration Engineer based in Lisbon. LLM pipelines, API integrations, and workflow automation with n8n, Python, and TypeScript.",
+    "Applied AI Engineer in Lisbon and founder of Oficina Studio. The startups I run, what they make each month, my skills and my career.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Alexandre Jaques - AI Integration Engineer",
+    title: "Alexandre Jaques - Applied AI Engineer",
     description:
       "LLMs, APIs, and automation for real business systems. Based in Lisbon.",
     type: "website",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alexandre Jaques - AI Integration Engineer",
+    title: "Alexandre Jaques - Applied AI Engineer",
     description: "LLMs, APIs, and automation for real business systems.",
   },
   icons: {

@@ -1,31 +1,47 @@
 # Alexandre Jaques — Portfolio (alexandrejaques.com)
 
-Atualizado a 25/08/2026. Se algo aqui contradisser o código, o código vence:
+Atualizado a 05/11/2026. Se algo aqui contradisser o código, o código vence:
 corrige este ficheiro na mesma sessão.
 
 ## O que é
 
 Portfólio pessoal do **Alexandre Jaques**, posicionado como
-**AI Integration Engineer** (pipelines de LLM, integrações de API, automação
+**Applied AI Engineer** (pipelines de LLM, integrações de API, automação
 de workflows). Next.js, repo `alexandre2120/portfolio`. **Desde 07/10/2026 corre no
 Coolify da VPS de produtos** (Dockerfile, `output: "standalone"`); saiu da Vercel porque a
 equipa `bunniemonki` foi bloqueada (site em 402).
 
-Serve o redesign **"Chaos In / System Out"** (PR #7, merged 24/08/2026):
-tipografia Anton + General Sans, paleta de papel, secções por maturidade.
+**Desde 05/11/2026 a home é a "página de fundador"** (estrutura inspirada em
+marclou.com, pedida pelo Alexandre; visual "Consola" do `/links`): perfil fixo à
+esquerda, gráfico da faturação dos últimos 12 meses, cartões das startups com a
+receita dos últimos 30 dias e uma linha mensal, "Também construí",
+competências e percurso.
 
 ## Onde vive o conteúdo (importante)
 
-**Toda a copy da home está em `src/content/portfolio.ts`**, num objeto `en` e
-num objeto `pt` que cumprem o tipo `PortfolioCopy`. Editar conteúdo é editar
-esse ficheiro, e mais nada. O componente que o consome é
-`src/components/portfolio/PortfolioHome.tsx`.
+**A home lê tudo de `src/content/home.ts`**: `revenue`, `startups`,
+`sideProjects`, `skills`, `career` e `copy` (EN/PT). O componente é
+`src/components/home/IndieHome.tsx` (+ `IndieHome.module.css`).
+
+**Atualização mensal da receita (à mão, decisão de 05/11/2026):** mudar
+`revenue.updated`, o `last30` de cada startup e acrescentar o mês novo a cada
+`monthly` (tirando o mais antigo, ficam sempre 12). Valores em euros **sem IVA**.
+Decisões do Alexandre: números reais mesmo quando são 0 €, e o Oficina Studio
+(serviços) entra e soma no total. Fontes: faturas emitidas da empresa (fecho
+mensal do CFO em `Empresa Portugal/fecho-AAAA-MM.md`) e as contas Stripe de
+cada produto (Mensagi, Aestum, Oficina Academy, PageXray pelo conector Stripe;
+o Mundo Criativo tem conta própria, fora do conector). Nunca pôr nomes de
+clientes nesta página.
+
+O layout antigo "Chaos In / System Out" (`src/components/portfolio/` e
+`src/content/portfolio.ts`) ficou no repositório, sem uso, para reverter se
+for preciso.
 
 `src/content/en.json` e `pt.json` são do i18n genérico e **não alimentam a
 home**. A pasta `src/components/sections/` foi apagada a 25/08/2026: era o
 layout pré-redesign, já não era importada por ninguém.
 
-## Estrutura da home
+## Estrutura da home antiga (sem uso desde 05/11/2026)
 
 | Secção | id | Fonte |
 |---|---|---|
@@ -39,9 +55,8 @@ layout pré-redesign, já não era importada por ninguém.
 | Testemunhos e contacto | `#contact` | `copy.testimonials`, `copy.contact` |
 
 Página separada: `/projects/mensagemz`, o case study de arquitetura do Mensagi
-(`src/components/case-studies/MensagemzCaseStudy.tsx`). **Está ligada a partir
-do case study 01 da home** através dos campos `secondaryHref`/`secondaryLabel`.
-Se mexeres nisso, confirma que não volta a ficar órfã.
+(`src/components/case-studies/MensagemzCaseStudy.tsx`). **Desde 05/11/2026 está
+órfã**: a home nova não tem ligação para ela.
 
 ## O que está listado hoje
 
@@ -76,7 +91,7 @@ da API (`LINKS_SENHA=teste node servidor.mjs`), nunca para a de produção.
 
 ## Regras de conteúdo (não negociáveis)
 
-* Título: **AI Integration Engineer**. React/Next é skill secundária.
+* Título: **Applied AI Engineer** (desde 21/10/2026, ver `jobseeker/CLAUDE.md`). React/Next é skill secundária.
   **Nunca mencionar Flutter.**
 * Métrica de automação: **sempre 60%** de redução de trabalho manual.
 * Inglês: "full professional proficiency". Nunca "B2", nunca Duolingo.
