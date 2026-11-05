@@ -127,8 +127,17 @@ npm run lint
 ```
 
 Correr `build` e `lint` antes de commitar. O deploy é no Coolify da VPS de
-produtos a partir do `main` (ver `jobseeker/links-api/README.md` para o padrão de
-deploy pela API do Coolify).
+produtos a partir do `main`: aplicação `portfolio`, uuid `2mzjm4gluht1xzjqdlto2zst`
+(domínios alexandrejaques.com, www e portfolio.169.58.162.165.sslip.io), fonte
+GitHub App. O push não publica sozinho: depois do `git push`, pedir o deploy
+com **POST** (o GET dá 405) a `http://localhost:8000/api/v1/deploy` no servidor
+(`ssh orcamentista-vps`, token em `/root/.coolify/token`), corpo
+`{"uuid":"2mzjm4gluht1xzjqdlto2zst","force":false}`, e seguir
+`/api/v1/deployments/<deployment_uuid>` até `finished` (cerca de 4 minutos).
+
+Avatar da home: `public/avatar-iconico.webp` (640 px), o recorte de
+`Fotos Alexandre/final/ia-2026-09-21/04-escuro-tshirt-branca-recorte.png` com a
+cabeça a sair de um disco ácido; escolhido pelo Alexandre a 05/11/2026 entre três.
 
 ## Stack
 
