@@ -158,6 +158,21 @@ export const startups: Startup[] = [
     last30: 0,
     monthly: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   },
+  {
+    id: "folgar",
+    name: "Folgar",
+    href: "https://folgar.app",
+    description: {
+      en: "Company cash flow organised by AI, on iPhone and Mac",
+      pt: "O fluxo de caixa da empresa organizado pela IA, no iPhone e no Mac",
+    },
+    tone: "green",
+    logo: { src: "/links/logos/folgar.svg", fit: "cover" },
+    kind: "product",
+    badge: { en: "Waitlist", pt: "Lista de espera" },
+    last30: 0,
+    monthly: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  },
 ]
 
 export const sideProjects: SideProject[] = [
@@ -172,19 +187,6 @@ export const sideProjects: SideProject[] = [
     tone: "blue",
     badge: { en: "Live", pt: "No ar" },
     badgeTone: "live",
-  },
-  {
-    name: "Folgar",
-    href: "https://folgar.app",
-    description: {
-      en: "Company finances on iPhone and Mac: what is really free",
-      pt: "Finanças da empresa no iPhone e no Mac: quanto está mesmo livre",
-    },
-    logo: { src: "/links/logos/folgar.svg", fit: "cover" },
-    mark: "F",
-    tone: "acid",
-    badge: { en: "Building", pt: "Em construção" },
-    badgeTone: "build",
   },
   {
     name: "Eris",
@@ -312,7 +314,7 @@ export const copy = {
       "Six years from first Customer Success hire to Director at a WhatsApp SaaS. Now I build AI software, for clients and for myself.",
     stats: [
       { value: "1", label: "company" },
-      { value: "6", label: "products live" },
+      { value: "7", label: "products live" },
       { value: "0", label: "investors" },
     ],
     status: "Open to partnerships and new ventures",
@@ -342,7 +344,7 @@ export const copy = {
       "Seis anos da primeira contratação de Customer Success a Diretor num SaaS de WhatsApp. Hoje construo software com IA, para clientes e para mim.",
     stats: [
       { value: "1", label: "empresa" },
-      { value: "6", label: "produtos no ar" },
+      { value: "7", label: "produtos no ar" },
       { value: "0", label: "investidores" },
     ],
     status: "Aberto a parcerias e novos negócios",
