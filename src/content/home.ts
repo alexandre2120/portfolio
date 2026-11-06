@@ -175,6 +175,7 @@ export const sideProjects: SideProject[] = [
   },
   {
     name: "Folgar",
+    href: "https://folgar.app",
     description: {
       en: "Company finances on iPhone and Mac: what is really free",
       pt: "Finanças da empresa no iPhone e no Mac: quanto está mesmo livre",
