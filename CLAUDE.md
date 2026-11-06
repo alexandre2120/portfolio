@@ -98,7 +98,10 @@ da API (`LINKS_SENHA=teste node servidor.mjs`), nunca para a de produção.
 * Carreira: ChatGuru contínua Out/2019 a Nov/2025 com progressão interna
   (CS Analyst → CS Manager → Head of Operations → Director); IntegraNinja como
   consultoria part-time em paralelo (Jul/2021 a Jan/2025).
-* Disponibilidade: full-time imediata. Nunca "selective freelance".
+* Disponibilidade (candidaturas): full-time imediata. Nunca "selective freelance".
+  A home pública diz, desde 06/11/2026 por pedido do Alexandre, "Open to
+  partnerships and new ventures" / "Aberto a parcerias e novos negócios"
+  (`copy.status` em `home.ts`), não "Open to AI engineering roles".
 * **Nunca usar travessão (em dash)** em texto em nome do Alexandre. Usar
   vírgulas, dois pontos ou parênteses.
 * Fronteiras: projetos de sociedade (Mensagi, Disparador) podem ser nomeados;
