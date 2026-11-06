@@ -40,6 +40,7 @@ export type SideProject = {
   name: string
   description: Text
   href?: string
+  logo?: { src: string; fit: "cover" | "mark" }
   mark: string
   tone: Tone
   badge: Text
@@ -173,12 +174,13 @@ export const sideProjects: SideProject[] = [
     badgeTone: "live",
   },
   {
-    name: "Caixa",
+    name: "Folgar",
     description: {
-      en: "Company finances on Mac and iPhone, invoices read by AI",
-      pt: "Finanças da empresa no Mac e no iPhone, faturas lidas por IA",
+      en: "Company finances on iPhone and Mac: what is really free",
+      pt: "Finanças da empresa no iPhone e no Mac: quanto está mesmo livre",
     },
-    mark: "C",
+    logo: { src: "/links/logos/folgar.svg", fit: "cover" },
+    mark: "F",
     tone: "acid",
     badge: { en: "Building", pt: "Em construção" },
     badgeTone: "build",
