@@ -138,6 +138,11 @@ com **POST** (o GET dá 405) a `http://localhost:8000/api/v1/deploy` no servidor
 `{"uuid":"2mzjm4gluht1xzjqdlto2zst","force":false}`, e seguir
 `/api/v1/deployments/<deployment_uuid>` até `finished` (cerca de 4 minutos).
 
+Ícone do site (desde 06/11/2026, pedido do Alexandre): o mesmo da Orquestra de Um /
+Oficina Academy, copiado de `Meus Produtos/a-oficina/src/app/icon.svg` e `apple-icon.png`
+para `src/app/`; o `favicon.ico` (16/32/48) foi gerado a partir do SVG. Os antigos
+`public/Dark.svg` e `Light.svg` ficaram sem uso.
+
 Avatar da home: `public/avatar-iconico.webp` (640 px), o recorte de
 `Fotos Alexandre/final/ia-2026-09-21/04-escuro-tshirt-branca-recorte.png` com a
 cabeça a sair de um disco ácido; escolhido pelo Alexandre a 05/11/2026 entre três.

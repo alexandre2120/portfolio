@@ -52,18 +52,6 @@ export const metadata: Metadata = {
     title: "Alexandre Jaques - Applied AI Engineer",
     description: "LLMs, APIs, and automation for real business systems.",
   },
-  icons: {
-    icon: [
-      {
-        url: "/Dark.svg",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/Light.svg",
-        media: "(prefers-color-scheme: dark)",
-      },
-    ],
-  },
 }
 
 export default function RootLayout({

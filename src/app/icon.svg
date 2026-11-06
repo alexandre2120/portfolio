@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!--
+    O símbolo da Oficina Academy, simplificado para tamanhos pequenos: anel
+    quase fechado e ponto ácido em caixa preta. Face ao símbolo de marca
+    (`public/marca/academy/simbolo-escuro.svg`) o traço é mais grosso e o
+    ponto é maior, porque a 16 px o ponto original quase desaparece.
+  -->
+  <rect width="64" height="64" rx="15" fill="#0f0f0d"/>
+  <path d="M31 15.5a16.5 16.5 0 1 0 16.5 16.5" fill="none" stroke="#f2f0e9" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="47" cy="16.5" r="7" fill="#d6ff4b"/>
+</svg>
